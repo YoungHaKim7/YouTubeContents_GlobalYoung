@@ -1,3 +1,13 @@
+# Easy Rust \_\_ mithradates(Rust스승님)
+
+https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
+
+<br>
+
+<hr>
+
+<br>
+
 # Rust tutorial
 
 <br>
