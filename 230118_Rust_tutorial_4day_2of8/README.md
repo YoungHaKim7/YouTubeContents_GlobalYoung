@@ -66,4 +66,12 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
         <td>22-1-31(mon.)</td>
         <td><a href="https://youtu.be/J11bAkyMbN0">shallow_copy__vs__deep_copy</td>
     </tr>
+    <tr align="center">
+        <td>22-2-8(tue.)</td>
+        <td><a href="https://youtu.be/Qdhu0RwHY8k">Rust타입추론이해하기type_inference_typescript&python와비교</td>
+    </tr>
+    <tr align="center">
+        <td>22-3-19(sat.)</td>
+        <td><a href="https://youtu.be/5f5Ua0ebeEc">rust한글강의_러스트_오너쉽개념Borrowing이해하기_메모리할당_What is Ownership_rust programming#rust #ownership #borrowing</td>
+    </tr>
 </table>
