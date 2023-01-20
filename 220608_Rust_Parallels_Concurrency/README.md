@@ -25,6 +25,18 @@
         <td>22-6-15(thur.)</td>
         <td><a href="https://youtu.be/9QyJ6b5I274">한글러스트Rust강의_023_Parallelism기초part3_truth_table_sort vs sort_unstable속도비교 #parallel #rayon</td>
     </tr>
+    <tr align="center">
+        <td>22-6-18(sun.)</td>
+        <td><a href="https://youtu.be/x1RLowpOWUE">한글러스트Rust강의_024_Parallelism기초part4_rayon개념_par_sort_unstable #reduce #rustlang #parallel</td>
+    </tr>
+    <tr align="center">
+        <td>22-6-19(mon.)</td>
+        <td><a href="https://youtu.be/O3-5o1RiKws">한글러스트Rust강의_025_Parallelism기초part5_crossbeam개념 concurruncy와parallel 이론비교 fractal모형구현 #parallel #rust</td>
+    </tr>
+    <tr align="center">
+        <td>22-8-13(sun.)</td>
+        <td><a href="https://youtu.be/wSBR35lKz6c">한글러스트Rust강의_034_rust1.63 Released #rustlang #1.63</td>
+    </tr>
 </table>
 
 <br>
