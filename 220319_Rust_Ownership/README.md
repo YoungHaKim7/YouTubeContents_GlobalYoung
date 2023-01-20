@@ -33,6 +33,22 @@ https://youtu.be/VFIOSWy93H0
 
 <hr>
 
+# rust -memory-container
+
+https://github.com/usagi/rust-memory-container-cs
+
+![rust-container](https://github.com/usagi/rust-memory-container-cs/blob/master/3840x2160/rust-memory-container-cs-3840x2160-dark-back.png)
+
+<br>
+
+# Ownership Concept Diagram
+
+![rust-ownvership](https://i.redd.it/nhhxzcwqd6q61.png)
+
+## 출처:
+
+https://www.reddit.com/r/rust/comments/mgh9n9/ownership_concept_diagram/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
+
 <br>
 
 # 같이 보면 좋은 자료
