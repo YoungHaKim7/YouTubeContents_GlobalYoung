@@ -25,7 +25,7 @@ https://github.com/usagi/rust-memory-container-cs
     <tr align="center">
         <td>23-1-21(sat.)</td>
         <td>
-        <a href="htttest">Day2___(4/8)<br>testtest</td>
+        <a href="https://youtu.be/enZupH5pVDU">Day2___(4/8)<br>한글Rust_059⭐️Rust_Tutorial_4일만에_마스터하기4/8_helix_text_editor #rustlang #helix</td>
     <tr align="center">
         <td>23-1-19(thur.)</td>
         <td>
