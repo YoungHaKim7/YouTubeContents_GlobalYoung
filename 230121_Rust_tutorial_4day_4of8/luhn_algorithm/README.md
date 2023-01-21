@@ -44,7 +44,9 @@ failures:
 test result: FAILED. 5 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 error: test failed, to rerun pass `--bin luhn_algorithm`
-cargo test --bin luhn_algorithm
+
+
+$ cargo test --bin luhn_algorithm
     Finished test [unoptimized + debuginfo] target(s) in 0.00s
      Running unittests src/main.rs (target/debug/deps/luhn_algorithm-68a15f25245cf0d3)
 
@@ -69,10 +71,14 @@ failures:
 test result: FAILED. 5 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 error: test failed, to rerun pass `--bin luhn_algorithm`
-cargo run --bin luhn_algorithm
+
+
+$ cargo run --bin luhn_algorithm
     Finished dev [unoptimized + debuginfo] target(s) in 0.00s
      Running `target/debug/luhn_algorithm`
+
 Is 1234 5678 1234 5670 a valid credit card number? yes
+
 
 
 $ cargo nextest run
@@ -107,6 +113,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ------------
      Summary [   0.008s] 6 tests run: 5 passed, 1 failed, 0 skipped
 error: test run failed
+
 
 
 $ cargo run
