@@ -21,6 +21,21 @@ First, let's take a look at the ownership rules. Keep these rules in mind as we 
 
 2. References must always be valid.
 
+# Borrow Checker(Rustlang)
+
+<table border="1">
+    <tr>
+    <td colspan="2" align="center">Rust Borrow Checker (해외 유튜버 자료)</td>
+    </tr>
+    <tr align="center">
+        <td>Date</td>
+        <td>Title & Link</td>
+    </tr>
+    <tr align="center">
+        <td>23-1-21(sun.)</td>
+        <td><a href="https://youtu.be/HwupNf9iCJk">Sneaking By The Rust Borrow Checker - Interior Mutability<br>Code to the Moon</td>
+</table>
+
 https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
 
 What is Ownership? - The Rust Programming Language
