@@ -32,6 +32,9 @@ First, let's take a look at the ownership rules. Keep these rules in mind as we 
         <td>Title & Link</td>
     </tr>
     <tr align="center">
+        <td>21-5-15(sat.)</td>
+        <td><a href="https://youtu.be/HG1fppexRMA">The Rust Borrow Checker - A Deep Dive<br>A Deep Dive - Nell Shamrell-Harrington, Microsoft</td>
+    <tr align="center">
         <td>23-1-21(sun.)</td>
         <td><a href="https://youtu.be/HwupNf9iCJk">Sneaking By The Rust Borrow Checker - Interior Mutability<br>Code to the Moon</td>
 </table>
