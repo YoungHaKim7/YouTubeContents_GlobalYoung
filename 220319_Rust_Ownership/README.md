@@ -100,6 +100,7 @@ https://www.reddit.com/r/rust/comments/mgh9n9/ownership_concept_diagram/?utm_sou
 <br>
 
 ![Screenshot 2023-01-21 at 10 56 20 AM](https://user-images.githubusercontent.com/67513038/213838895-8194e55a-abe4-472e-8ed4-f34e7770425a.png)
+<br><a href="https://youtu.be/__7cMs4gqSU">220607자바(Java)*vs*러스트*비교하면서 러스트오너쉽개념이해*기본syntax연습하기part3\_#java #rust #ownership</a><br>
 
 <br>
 
