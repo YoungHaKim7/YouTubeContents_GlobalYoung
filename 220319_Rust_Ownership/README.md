@@ -1,3 +1,53 @@
+# 소유권 규칙
+
+먼저, 소유권에 적용되는 규칙부터 살펴보자. 앞으로 살펴볼 예제들은 이 규칙들을 설명하기 위한 것이므로 잘 기억하도록 하자.
+
+1. 러스트가 다루는 각각의 값은 소유자(owner)라고 부르는 변수를 가지고 있다.
+2. 특정 시점에 값의 소유자는 단 하나뿐이다.
+3. 소유자가 범위를 벗어나면 그 값은 제거된다.
+
+# Ownership Rules
+
+First, let's take a look at the ownership rules. Keep these rules in mind as we work through the examples that illustrate them"
+
+1. Each value in Rust has a variable that's called its owner.
+2. There can only be one owner at a time.
+3. When the owner goes out of scope, the value will be dropped.
+
+# Borrowing rules
+
+1. At any given time,
+   you can have either one mutable reference or any number of immutable references.
+
+2. References must always be valid.
+
+https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+
+What is Ownership? - The Rust Programming Language
+
+Ownership is a set of rules that governs how a Rust program manages memory. All programs have to manage the way they use a computer’s memory while running. Some languages have garbage collection that constantly looks for no-longer used memory as the prog
+
+https://doc.rust-lang.org
+
+# 메모리를 빌려간 참조가 있는 동안은 해제할 수 없습니다.
+
+- 소유권자의 수명이 다하기 전에 갚아야 합니다.
+
+20분17초
+https://www.youtube.com/watch?v=sv9UHD67_rQ
+
+- 무효화
+
+메모리를 빌려간 참조가 있는 동안은 변경할 수 없습니다.
+컴파일러가 참조의 수명을 추척합니다.
+
+22분16초
+https://www.youtube.com/watch?v=sv9UHD67_rQ
+
+<br>
+
+<hr>
+
 # Ownership(Rustlang)
 
 <table border="1">
