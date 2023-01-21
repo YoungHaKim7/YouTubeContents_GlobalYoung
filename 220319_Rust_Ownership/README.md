@@ -91,7 +91,7 @@ https://www.reddit.com/r/rust/comments/mgh9n9/ownership_concept_diagram/?utm_sou
 출처
 
 Rust for Java Developers 3/3 - Understanding Ownership
-hhttps://youtu.be/Vg1LGHuAPP8
+https://youtu.be/Vg1LGHuAPP8
 
 Rust소유권 규칙Ownership Rules & Borrowing rules
 https://economiceco.tistory.com/12591
