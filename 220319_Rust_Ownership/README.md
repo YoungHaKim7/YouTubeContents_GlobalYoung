@@ -61,7 +61,28 @@ https://www.youtube.com/watch?v=sv9UHD67_rQ
     <tr align="center">
         <td>22-3-19(sun.)</td>
         <td><a href="https://youtu.be/5f5Ua0ebeEc">rust한글강의_러스트_오너쉽개념Borrowing이해하기_메모리할당_What is Ownership_rust programming#rust #ownership #borrowing</td>
+    <tr align="center">
+        <td>22-6-07(tue.)</td>
+        <td><a href="https://youtu.be/__7cMs4gqSU">자바(Java)_vs_러스트_비교하면서 러스트오너쉽개념이해_기본syntax연습하기part3_#java #rust #ownership</td>
 </table>
+
+# rust -memory-container
+
+https://github.com/usagi/rust-memory-container-cs
+
+![rust-container](https://github.com/usagi/rust-memory-container-cs/blob/master/3840x2160/rust-memory-container-cs-3840x2160-dark-back.png)
+
+<br>
+
+# Ownership Concept Diagram
+
+![rust-ownvership](https://i.redd.it/nhhxzcwqd6q61.png)
+
+## 출처:
+
+https://www.reddit.com/r/rust/comments/mgh9n9/ownership_concept_diagram/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
+
+<br>
 
 <br>
 
@@ -82,24 +103,6 @@ https://www.youtube.com/watch?v=oOXM9Aafem8&list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjA
 https://youtu.be/VFIOSWy93H0
 
 <hr>
-
-# rust -memory-container
-
-https://github.com/usagi/rust-memory-container-cs
-
-![rust-container](https://github.com/usagi/rust-memory-container-cs/blob/master/3840x2160/rust-memory-container-cs-3840x2160-dark-back.png)
-
-<br>
-
-# Ownership Concept Diagram
-
-![rust-ownvership](https://i.redd.it/nhhxzcwqd6q61.png)
-
-## 출처:
-
-https://www.reddit.com/r/rust/comments/mgh9n9/ownership_concept_diagram/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
-
-<br>
 
 # 같이 보면 좋은 자료
 
