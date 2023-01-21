@@ -88,6 +88,21 @@ https://www.reddit.com/r/rust/comments/mgh9n9/ownership_concept_diagram/?utm_sou
 
 <br>
 
+출처
+
+Rust for Java Developers 3/3 - Understanding Ownership
+hhttps://youtu.be/Vg1LGHuAPP8
+
+Rust소유권 규칙Ownership Rules & Borrowing rules
+https://economiceco.tistory.com/12591
+
+Rust) shared reference ❤️ unique reference
+https://youtu.be/Bfqx_V2gp1Y
+
+<br>
+
+<hr>
+
 # Easy Rust
 
 - 프로그래밍 언어 러스트를 배웁시다! 019 Easy Rust in Korean: references and shadowing
