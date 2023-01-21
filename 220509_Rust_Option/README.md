@@ -52,7 +52,7 @@ https://doc.rust-lang.org/std/option/
 
 ## Rust's Option❤️in One Figure(Reddit자료)
 
-https://www.reddit.com/r/rust/comment
+https://www.reddit.com/r/rust/comments/kdfb9k/rusts_option_in_one_figure/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
 
 Rust's Option in One Figure Posted in r/rust by u/arsdragonfly
 
