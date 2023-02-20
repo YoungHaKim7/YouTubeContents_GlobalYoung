@@ -19,5 +19,5 @@ warning: fields `x` and `y` are never read
 warning: `generic_data_types` (bin "generic_data_types") generated 1 warning
     Finished dev [unoptimized + debuginfo] target(s) in 0.11s
      Running `target/debug/generic_data_types`
-Point { x: 5, y: 10 } and Point { x: 1.0, y: 4.0 }
+[Point](2023-02-20_point.md) { x: 5, y: 10 } and Point { x: 1.0, y: 4.0 }
 ```
