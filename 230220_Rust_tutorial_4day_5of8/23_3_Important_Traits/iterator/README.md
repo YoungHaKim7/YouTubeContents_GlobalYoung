@@ -1,0 +1,44 @@
+# Result
+
+```
+$ cargo run
+   Compiling iterator v0.1.0 (/Users/globalyoung/Documents/test/test/rust/YouTubeContents_GlobalYoung/230220_Rust_tutorial_4day_5of8/23_3_Important_Traits/iterator)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.10s
+     Running `target/debug/iterator`
+fib(0): 1
+fib(1): 1
+fib(2): 2
+fib(3): 3
+fib(4): 5
+
+$ cargo run
+
+   Compiling iterator v0.1.0 (/Users/globalyoung/Documents/test/test/rust/YouTubeContents_GlobalYoung/230220_Rust_tutorial_4day_5of8/23_3_Important_Traits/iterator)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.10s
+     Running `target/debug/iterator`
+fib(0): 1
+fib(1): 1
+fib(2): 2
+fib(3): 3
+fib(4): 5
+fib(5): 8
+fib(6): 13
+fib(7): 21
+fib(8): 34
+fib(9): 55
+fib(10): 89
+fib(11): 144
+fib(12): 233
+fib(13): 377
+fib(14): 610
+fib(15): 987
+fib(16): 1597
+fib(17): 2584
+fib(18): 4181
+fib(19): 6765
+fib(20): 10946
+fib(21): 17711
+fib(22): 28657
+fib(23): 46368
+fib(24): 75025
+```
