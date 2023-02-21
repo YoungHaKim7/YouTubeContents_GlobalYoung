@@ -20,7 +20,7 @@
 
   - [rust \_ paralles& concurrency](https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#parallels--concurrencyrustlang)
 
-  - [rust debugging](https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#parallels--concurrencyrustlang)
+  - [rust debugging](https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#debuggingrustlang)
 
 - Rust 공식 문서 공식 learn
 
