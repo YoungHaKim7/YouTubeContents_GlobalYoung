@@ -11,6 +11,10 @@
         <td>Title & Link</td>
     </tr>
     <tr align="center">
+        <td>23-2-20(mon.)</td>
+        <td>
+        <a href="https://youtu.be/enZupH5pVDU">Day2___(5/8)<br>한글Rust_059⭐️Rust_Tutorial_4일만에_마스터하기5/8_helix_text_editor #rustlang #helix</td>
+    <tr align="center">
         <td>23-1-21(sat.)</td>
         <td>
         <a href="https://youtu.be/enZupH5pVDU">Day2___(4/8)<br>한글Rust_059⭐️Rust_Tutorial_4일만에_마스터하기4/8_helix_text_editor #rustlang #helix</td>
