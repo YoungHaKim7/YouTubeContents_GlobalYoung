@@ -13,7 +13,7 @@
     <tr align="center">
         <td>23-2-20(mon.)</td>
         <td>
-        <a href="https://youtu.be/Px3wqnxMa6A">Day2___(5/8)<br>한글Rust_060⭐️Rust_Tutorial_4일만에_마스터하기5/8_neovim #rustlang #macos</td>
+        <a href="https://youtu.be/Px3wqnxMa6A">Day3___(5/8)<br>한글Rust_060⭐️Rust_Tutorial_4일만에_마스터하기5/8_neovim #rustlang #macos</td>
     <tr align="center">
         <td>23-1-21(sat.)</td>
         <td>
