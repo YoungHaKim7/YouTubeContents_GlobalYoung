@@ -56,6 +56,8 @@ https://github.com/YoungHaKim7/Machine_Learning_Rust
 
   - [rust\_ MachineLearning](https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#rust-machinelearning)
 
+  - https://github.com/YoungHaKim7/Machine_Learning_Rust
+
 <br>
 
 - Algorithm
