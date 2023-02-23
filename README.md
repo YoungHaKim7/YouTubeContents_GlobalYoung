@@ -179,6 +179,10 @@ https://github.com/YoungHaKim7/my_rust_project
         <td>Title & Link</td>
     </tr>
     <tr align="center">
+        <td>23-2-23(thur.)</td>
+        <td>
+        <a href="https://youtu.be/zjmcKUrrv18">Day3___(6/8)<br>한글Rust_061⭐️Rust_Tutorial_4일만에_마스터하기6/8_part1_neovim #rustlang #macos</td>
+    <tr align="center">
         <td>23-2-20(mon.)</td>
         <td>
         <a href="https://youtu.be/Px3wqnxMa6A">Day3___(5/8)<br>한글Rust_060⭐️Rust_Tutorial_4일만에_마스터하기5/8_neovim #rustlang #macos</td>
