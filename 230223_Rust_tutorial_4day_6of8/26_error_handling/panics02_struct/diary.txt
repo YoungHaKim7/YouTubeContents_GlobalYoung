@@ -1,0 +1,3 @@
+test diary
+
+rust lang
