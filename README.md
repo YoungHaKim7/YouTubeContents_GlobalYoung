@@ -8,7 +8,7 @@
 
 - Rust tutorial series
 
-  - [Rust tutorial](https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#rust-tutorial)
+  - [Rust tutorial](https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#rust-tutorial-)
 
   - [Rust\_\_ Ownership](https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#ownershiprustlang)
 
