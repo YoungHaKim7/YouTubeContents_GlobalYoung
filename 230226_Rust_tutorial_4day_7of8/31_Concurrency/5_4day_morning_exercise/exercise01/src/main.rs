@@ -39,7 +39,7 @@ fn main() {
         .collect::<Vec<_>>();
 
     for i in 0..forks.len() {
-        let tx: std::sync::mpsc::SyncSender<String> = tx.clone();
+        let tx: std::sync::mpsc::SyncSender<usize> = tx.clone();
         let mut left_fork = forks[i].clone();
         let mut right_fork = forks[(i + 1) % forks.len()].clone();
 
