@@ -88,7 +88,6 @@
 
 # Easy Rust \_\_ mithradates(Rust스승님)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 - 한글버젼 러스트 Rust 강의
   https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
 
@@ -132,7 +131,6 @@
 
 # YouTubeContents_GlobalYoung<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 - GlobalYoung러스트 Contents Series모아보기
 
 https://youtube.com/playlist?list=PLcMveqN_07maeDuKrsf5GYMDB5obTWoWg
@@ -165,7 +163,6 @@ https://github.com/YoungHaKim7/my_rust_project
 
 <br>
 
-
 # Rust tutorial <a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
 - Rust 4 day Tutorial
@@ -179,9 +176,25 @@ https://github.com/YoungHaKim7/my_rust_project
         <td>Title & Link</td>
     </tr>
     <tr align="center">
+        <td>23-2-26(sun.)</td>
+        <td>
+        <a href="https://youtu.be/tplPqthCWvA">Day4___(7/8)__Concurrency<br>한글Rust_065⭐️Rust_Tutorial_4일만에_마스터하기7/8_part4_concurrency_neovim #rustlang #macos #concurrency</td>
+    <tr align="center">
+        <td>23-2-26(sun.)</td>
+        <td>
+        <a href="https://youtu.be/z9H9hEJMzNY">Day3___(6/8)__part4_FFI_Unsafe<br>한글Rust_064⭐️Rust_Tutorial_4일만에_마스터하기6/8_part4_FFI #macos</td>
+    <tr align="center">
+        <td>23-2-26(sun.)</td>
+        <td>
+        <a href="https://youtu.be/tcclva5zAlI">Day3___(6/8)__part3_Unsafe_Rust<br>한글Rust_063⭐️Rust_Tutorial_4일만에_마스터하기6/8_part3_unsafe_rust_neovim #rustlang #macos</td>
+    <tr align="center">
+        <td>23-2-26(sun.)</td>
+        <td>
+        <a href="https://youtu.be/RcDc1tlYZrY">Day3___(6/8)__part2<br>한글Rust_062⭐️Rust_Tutorial_4일만에_마스터하기6/8_part2_neovim #rustlang #macos</td>
+    <tr align="center">
         <td>23-2-23(thur.)</td>
         <td>
-        <a href="https://youtu.be/zjmcKUrrv18">Day3___(6/8)<br>한글Rust_061⭐️Rust_Tutorial_4일만에_마스터하기6/8_part1_neovim #rustlang #macos</td>
+        <a href="https://youtu.be/zjmcKUrrv18">Day3___(6/8)__part1<br>한글Rust_061⭐️Rust_Tutorial_4일만에_마스터하기6/8_part1_neovim #rustlang #macos</td>
     <tr align="center">
         <td>23-2-20(mon.)</td>
         <td>
@@ -210,7 +223,6 @@ https://github.com/YoungHaKim7/my_rust_project
 
 # Ownership(Rustlang)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 <table border="1">
     <tr>
     <td colspan="2" align="center">Rust Option</td>
@@ -237,7 +249,6 @@ https://github.com/YoungHaKim7/my_rust_project
 <br>
 
 # Basic Rust 완전 기초<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 <br>
 
@@ -278,7 +289,6 @@ https://github.com/YoungHaKim7/my_rust_project
 
 # Traits(Rustlang)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 <table border="1">
     <tr>
     <td colspan="2" align="center">Rust Traits</td>
@@ -296,7 +306,6 @@ https://github.com/YoungHaKim7/my_rust_project
 <br>
 
 # Option (Rustlang)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 <table border="1">
     <tr>
@@ -327,7 +336,6 @@ https://github.com/YoungHaKim7/my_rust_project
 <br>
 
 # Parallels & Concurrency(Rustlang)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 <table border="1">
     <tr>
@@ -376,7 +384,6 @@ https://github.com/YoungHaKim7/my_rust_project
 
 # Debugging(Rustlang)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 <table border="1">
     <tr>
     <td colspan="2" align="center">Rust Option</td>
@@ -402,7 +409,6 @@ https://github.com/YoungHaKim7/my_rust_project
 <br>
 
 # Rust MachineLearning<a href="https://github.com/rust-ml/linfa"><img align="left" alt="rustmascot" width="26px" src="https://user-images.githubusercontent.com/67513038/213403213-1b1b3efc-ce53-4825-9dfc-e9bf2956a7f4.svg" /></a><a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 - Rust crate (linfa)
 
@@ -437,9 +443,7 @@ https://github.com/rust-ml/linfa
 
 <br>
 
-
 # Algorithm & Data Structures 자료 구조<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 https://github.com/YoungHaKim7/c_project/
 
@@ -489,7 +493,6 @@ Associative array(Multimap, Retrieval Data Structure), List, StackQueue(Double-e
 
 # Big-O Cheat Sheet(그림으로 이쁘게)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 https://dev.to/deciduously/big-o-cheat-sheet-3i7d
 
 <br>
@@ -499,7 +502,6 @@ https://dev.to/deciduously/big-o-cheat-sheet-3i7d
 <hr>
 
 # Algorithms Contents<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 <table border="1">
     <tr>
@@ -529,9 +531,7 @@ https://dev.to/deciduously/big-o-cheat-sheet-3i7d
 
 <br>
 
-
 # Rust 개발환경 Settings(Windows OS)<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 https://github.com/YoungHaKim7/rust_vim_setting
 
@@ -566,7 +566,6 @@ _Youtube link</td>
 
 # Rust 개발환경 Settings(Linux OS (Ubuntu))<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 https://github.com/YoungHaKim7/rust_vim_setting
 
 - NeoVim(Linus OS)
@@ -591,7 +590,6 @@ https://github.com/YoungHaKim7/rust_vim_setting
 
 # NeoVim(LinuxOS or macOS) init.lua 으로 빡쎄게 Hard mode 세팅<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 <table border="1">
     <tr>
     <td colspan="2" align="center">Linux OS Setting _Vim</td>
@@ -611,7 +609,6 @@ https://github.com/YoungHaKim7/rust_vim_setting
 <br>
 
 # Rust 공식 Learn 채널<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 https://www.rust-lang.org/learn
 
@@ -637,7 +634,6 @@ https://docs.rs/
 
 # Learn Rust With Entirely Too Many Linked Lists<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
-
 https://rust-unofficial.github.io/too-many-lists/index.html
 
 <br>
@@ -649,14 +645,14 @@ https://rust-unofficial.github.io/too-many-lists/index.html
 # Rust Design Patterns<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
 
 ![design_patterns](https://user-images.githubusercontent.com/67513038/219593397-b9a305ba-1c07-416c-9815-697dc235fe52.png)
+
 # Design-Patterns (Rustlang)<a href="https://www.rust-lang.org/"><img alt="rust1" width="32px" src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" /></a>
 
-  - https://refactoring.guru/design-patterns/rust
+- https://refactoring.guru/design-patterns/rust
 
 <br>
 
 - Rust Design Patterns<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
   - https://rust-unofficial.github.io/patterns/intro.html
 
@@ -665,7 +661,6 @@ https://rust-unofficial.github.io/too-many-lists/index.html
 <hr>
 
 # Awesome-rust<a href="https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung#contents">[🔝]</a>
-
 
 https://github.com/awesome-rust-com/awesome-rust
 
