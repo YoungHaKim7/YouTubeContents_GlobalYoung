@@ -17,6 +17,10 @@ https://google.github.io/comprehensive-rust/error-handling/panics.html
     <tr align="center">
         <td>23-2-26(sun.)</td>
         <td>
+        <a href="https://youtu.be/tplPqthCWvA">Day4___(7/8)__Concurrency<br>한글Rust_065⭐️Rust_Tutorial_4일만에_마스터하기7/8_part4_concurrency_neovim #rustlang #macos #concurrency</td>
+    <tr align="center">
+        <td>23-2-26(sun.)</td>
+        <td>
         <a href="https://youtu.be/z9H9hEJMzNY">Day3___(6/8)__part4_FFI_Unsafe<br>한글Rust_064⭐️Rust_Tutorial_4일만에_마스터하기6/8_part4_FFI #macos</td>
     <tr align="center">
         <td>23-2-26(sun.)</td>
@@ -53,6 +57,14 @@ https://google.github.io/comprehensive-rust/error-handling/panics.html
         <td><a href="https://youtu.be/yaL39Fd_4as">Day1___(1/8)_Youtube link</td>
     </tr>
 </table>
+
+<hr>
+
+<br>
+
+# Rust_Tutorial_Full_course
+
+https://github.com/YoungHaKim7/Rust_Tutorial_Full_course
 
 <br>
 
