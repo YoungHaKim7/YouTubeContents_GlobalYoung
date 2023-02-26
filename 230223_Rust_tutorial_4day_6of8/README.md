@@ -16,7 +16,7 @@ https://google.github.io/comprehensive-rust/error-handling/panics.html
         <td>Title & Link</td>
     </tr>
      <tr align="center">
-        <td>23-2-23(thur.)</td>
+        <td>23-2-26(sun.)</td>
         <td>
         <a href="https://youtu.be/RcDc1tlYZrY">Day3___(6/8)__part2<br>한글Rust_062⭐️Rust_Tutorial_4일만에_마스터하기6/8_part2_neovim #rustlang #macos</td>
     <tr align="center">
