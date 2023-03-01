@@ -58,7 +58,7 @@ https://google.github.io/comprehensive-rust/error-handling/panics.html
     </tr>
 </table>
 
-<hr>
+
 
 <br>
 
@@ -70,6 +70,10 @@ https://source.android.com/docs/setup/build/rust/building-rust-modules/overview?
 
     - https://source.android.com/docs/setup/build/rust/building-rust-modules/overview
 
+<br>
+            
+<hr>
+            
 <br>
 
 # Rust_Tutorial_Full_course
