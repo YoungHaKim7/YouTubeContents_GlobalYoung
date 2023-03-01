@@ -70,6 +70,10 @@ https://source.android.com/docs/setup/build/rust/building-rust-modules/overview?
 
     - https://source.android.com/docs/setup/build/rust/building-rust-modules/overview
 
+## Android Studio 
+            
+https://developer.android.com/studio/install?hl=ko
+
 <br>
             
 <hr>
