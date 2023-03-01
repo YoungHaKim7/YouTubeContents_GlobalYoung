@@ -85,6 +85,12 @@ https://developer.android.com/studio/install?hl=ko
 <hr>
             
 <br>
+            
+# Android 12 Internals: [Ch1.vid11] acloud setup --host
+            
+- https://youtu.be/LeS7pXF9kVk
+            
+  - 댓글 보니 나랑 똑같은 오류 ㅋㅋㅋㅋ 역시 나만 안되는게 아니였어 ㅋㅋ
 
 # Rust_Tutorial_Full_course
 
