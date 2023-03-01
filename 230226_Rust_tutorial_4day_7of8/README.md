@@ -65,6 +65,10 @@ https://google.github.io/comprehensive-rust/error-handling/panics.html
 # Android Rust 소개
 
 https://source.android.com/docs/setup/build/rust/building-rust-modules/overview?hl=ko
+            
+  - English Version
+
+    - https://source.android.com/docs/setup/build/rust/building-rust-modules/overview
 
 <br>
 
