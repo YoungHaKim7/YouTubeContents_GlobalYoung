@@ -64,6 +64,14 @@ https://google.github.io/comprehensive-rust/welcome.html
 
 <br>
 
+# source android
+
+https://source.android.com/docs/setup/start
+
+# Building and running Android from AOSP - Cloud Android | Android Day on Google Open Source Live | Google Open Source
+
+https://youtu.be/jjLx9-93XbQ
+
 # Android Rust 소개
 
 https://source.android.com/docs/setup/build/rust/building-rust-modules/overview?hl=ko
