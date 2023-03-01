@@ -69,6 +69,8 @@ https://source.android.com/docs/setup/build/rust/building-rust-modules/overview?
   - English Version
 
     - https://source.android.com/docs/setup/build/rust/building-rust-modules/overview
+    
+- https://security.googleblog.com/2021/04/rust-in-android-platform.html
 
 ## Android Studio 설치하기
             
