@@ -1,5 +1,35 @@
 # Computer Science
 
+<table border="1">
+    <tr>
+    <td colspan="2" align="center">Rust tutorial</td>
+    </tr>
+    <tr align="center">
+        <td>Date</td>
+        <td>Title & Link</td>
+    </tr>
+    <tr align="center">
+        <td>23-3-08(wed.)</td>
+        <td><a href="https://youtu.be/CstDZxmA8Y8">한글Rust_067⭐️Rust & Computer_Science기초_16진수_2진수로변환연습_Bevy Game<a/></td>
+    </tr>
+</table>
+
+<hr>
+
+# Easy Rust \_\_ mithradates(Rust스승님)
+
+https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
+
+<br>
+
+<hr>
+
+
+<br>
+
+
+
+
 # CMU CS Academy
 
 https://academy.cs.cmu.edu/
