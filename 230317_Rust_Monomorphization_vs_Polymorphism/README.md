@@ -41,3 +41,5 @@ timeline
 # Polymorphism 설명
 
 - https://oswalt.dev/2021/06/polymorphism-in-rust/
+
+- https://en.wikipedia.org/wiki/Parametric_polymorphism
