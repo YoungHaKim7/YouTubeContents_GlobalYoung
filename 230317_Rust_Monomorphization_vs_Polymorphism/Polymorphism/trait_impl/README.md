@@ -9,3 +9,9 @@ Lion says GROWL!
 Tiger says GROWL!
 Bear says GROWL!
 ```
+
+# objdump (M1 pro MacBook)
+
+```
+objdump --disassemble -S -C ./target/debug/trait_impl
+```
