@@ -1,24 +1,3 @@
-# Result
-
-```
-10, some text
-```
-
-
-https://en.wikipedia.org/wiki/Monomorphization
-
-
-# Debugging LLVM
-
-```
-$ rustc main.rs --emit=llvm-ir -O -C no-prepopulate-passes
-
-```
-
-main.ll 
-
-```
-
 ; ModuleID = 'main.106357af-cgu.0'
 source_filename = "main.106357af-cgu.0"
 target datalayout = "e-m:w-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
@@ -371,4 +350,3 @@ attributes #6 = { noreturn }
 !4 = !{i64 1}
 !5 = !{i8 0, i8 2}
 !6 = !{i64 8}
-```
