@@ -43,3 +43,12 @@ timeline
 - https://oswalt.dev/2021/06/polymorphism-in-rust/
 
 - https://en.wikipedia.org/wiki/Parametric_polymorphism
+
+# Debugging LLVM
+
+```
+$ rustc main.rs --emit=llvm-ir -O -C no-prepopulate-passes
+
+```
+
+https://rustc-dev-guide.rust-lang.org/backend/debugging.html
