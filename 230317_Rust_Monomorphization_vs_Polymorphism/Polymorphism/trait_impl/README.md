@@ -42,6 +42,45 @@ Try one of those by name or a sequence number
 
 https://crates.io/crates/cargo-binutils
 
+```
+cargo objdump --release -- --disassemble --no-show-raw-insn | grep -A 10 -B 10 "main"
+Finished release [optimized] target(s) in 0.00s
+100002aa8: str xzr, [sp]
+100002aac: adr x8, #196404
+100002ab0: nop
+100002ab4: stp x8, xzr, [sp, #32]
+100002ab8: mov x0, sp
+100002abc: bl 0x100017d64 <\_std::io::stdio::\_print::hf5189a9887145206>
+100002ac0: ldp x29, x30, [sp, #48]
+100002ac4: add sp, sp, #64
+100002ac8: ret
+
+0000000100002acc <_trait_impl::main::hc7d33c912fbb6232>:
+100002acc: stp x29, x30, [sp, #-16]!
+100002ad0: mov x29, sp
+100002ad4: bl 0x100002a0c <_<trait*impl::Lion as trait_impl::Growler>::growl::h8fae6da4cb71fbad>
+100002ad8: bl 0x100002a4c <*<trait*impl::Tiger as trait_impl::Growler>::growl::h818e891a091e4820>
+100002adc: ldp x29, x30, [sp], #16
+100002ae0: b 0x100002a8c <*<trait_impl::Bear as trait_impl::Growler>::growl::hd762be638330fd3d>
+
+0000000100002ae4 <\_main>:
+100002ae4: sub sp, sp, #32
+100002ae8: stp x29, x30, [sp, #16]
+100002aec: add x29, sp, #16
+100002af0: mov x3, x1
+100002af4: sxtw x2, w0
+100002af8: adr x8, #-44
+100002afc: nop
+100002b00: str x8, [sp, #8]
+100002b04: adr x1, #251716
+100002b08: nop
+
+```
+
+# cargo-binutils
+
+https://crates.io/crates/cargo-binutils
+
 Proxy for LLVM tools like llvm-nm, llvm-objdump and llvm-size
 
 ```
