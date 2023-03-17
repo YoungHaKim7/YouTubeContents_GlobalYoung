@@ -36,6 +36,8 @@ timeline
 
 - https://doc.rust-lang.org/book/ch10-01-syntax.html#performance-of-code-using-generics
 
+- https://en.wikipedia.org/wiki/Monomorphization
+
 # Polymorphism 설명
 
 - https://oswalt.dev/2021/06/polymorphism-in-rust/
