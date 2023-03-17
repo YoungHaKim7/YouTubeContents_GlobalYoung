@@ -66,3 +66,34 @@ rustc -Cprofile-generate=/tmp/pgo-data -O ./main.rs
 ```
 
 https://doc.rust-lang.org/rustc/profile-guided-optimization.html
+
+# dump-mir
+
+```
+rustc -Z dump-mir=main main.rs
+
+```
+
+https://rustc-dev-guide.rust-lang.org/mir/debugging.html
+
+# Reading a .pdb file 
+
+Microsoft released the source code of their PDB formats, so other compiler developers like the LLVM team can implement the PDB format easier.
+
+https://github.com/Microsoft/microsoft-pdb/
+
+To actually dump the output of a file, just use this:
+
+https://github.com/Microsoft/microsoft-pdb/blob/master/cvdump/cvdump.exe
+
+```
+cvdump Whatever.pdb
+
+```
+
+https://stackoverflow.com/questions/2040132/reading-a-pdb-file
+
+
+# Rustup book
+
+https://rust-lang.github.io/rustup/overrides.html
