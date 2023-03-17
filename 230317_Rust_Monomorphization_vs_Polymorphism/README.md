@@ -52,3 +52,17 @@ $ rustc main.rs --emit=llvm-ir -O -C no-prepopulate-passes
 ```
 
 https://rustc-dev-guide.rust-lang.org/backend/debugging.html
+
+# Profile-guided Optimization
+
+```
+rustup component add llvm-tools-preview
+
+
+# STEP 1: Compile the binary with instrumentation
+
+rustc -Cprofile-generate=/tmp/pgo-data -O ./main.rs
+
+```
+
+https://doc.rust-lang.org/rustc/profile-guided-optimization.html
