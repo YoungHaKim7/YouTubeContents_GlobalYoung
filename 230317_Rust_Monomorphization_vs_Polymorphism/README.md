@@ -195,3 +195,18 @@ Finished release [optimized] target(s) in 0.00s
 100002b08: nop
 
 ```
+
+# rust_웹으로 어셈블리 보기Assembly
+
+https://rust.godbolt.org/
+
+- 뒤에 최적화 옵션
+
+```
+-C opt-level=3 --target i686-unknown-linux-gnu
+```
+
+>>- <a href="https://github.com/YoungHaKim7/my_rust_project/tree/main/06_Rust_Optimization#rustc">target list </a>
+>>```
+>>$ rustc --print target-list
+>>```
