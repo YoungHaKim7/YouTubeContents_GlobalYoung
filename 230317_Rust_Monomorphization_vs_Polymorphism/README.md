@@ -214,3 +214,7 @@ https://rust.godbolt.org/
 >>```
 >>$ rustc --print target-list
 >>```
+
+  - Rust Atomics and Locks 같이 읽기 004: Borrowing and Data Races
+
+    - https://youtu.be/ePKy1YbG1f4
