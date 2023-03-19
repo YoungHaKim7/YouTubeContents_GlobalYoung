@@ -19,10 +19,10 @@ timeline
          : T<br>(Using Generic Types in Rust)
          : Function , Struct, Enum, Method Definitions
          : larger binary size.
-    RunTime : Run time
+    RunTime : Runtime
          : Polymorphism
          : Dynamic Dispatch
-         : dyn
+         : dyn Trait
          : Trait Objects
          : This cuts down on binary size<br>but incurs a performance penalty due to the extra lookup at runtime.
 
