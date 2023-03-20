@@ -31,3 +31,7 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
         <td><a href="https://youtu.be/8UTZbeHtVJk">한글러스트Rust강의_039⭐️Rust_traits기초_part2 #rustlang #traits #doomemacs</td>
     </tr>
 </table>
+
+# Traits and You: A Deep Dive — Nell Shamrell-Harrington
+
+https://youtu.be/grU-4u0Okto
