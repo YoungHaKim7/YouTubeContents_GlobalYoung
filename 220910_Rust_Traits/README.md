@@ -35,3 +35,8 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
 # Traits and You: A Deep Dive — Nell Shamrell-Harrington
 
 https://youtu.be/grU-4u0Okto
+
+
+# 공부하자 트레이트 Traits __Rust Syntax상식❤️) Traits -
+
+https://economiceco.tistory.com/m/14839
