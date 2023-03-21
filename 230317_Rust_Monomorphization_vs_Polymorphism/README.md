@@ -237,7 +237,7 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
 
 <table border="1">
     <tr>
-    <td colspan="2" align="center">Rust Monomorphization vs Polymorphism</td>
+    <td colspan="2" align="center"></td>
     </tr>
     <tr align="center">
         <td>Date</td>
