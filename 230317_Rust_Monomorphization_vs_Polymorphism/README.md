@@ -218,3 +218,33 @@ https://rust.godbolt.org/
   - Rust Atomics and Locks 같이 읽기 004: Borrowing and Data Races
 
     - https://youtu.be/ePKy1YbG1f4
+
+# Easy Rust \_\_ mithradates(Rust스승님)
+
+https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
+
+<br>
+
+<hr>
+
+<br>
+
+# Rust tutorial
+
+<br>
+
+- Monomorphization vs Polymorphism
+
+<table border="1">
+    <tr>
+    <td colspan="2" align="center">Rust Monomorphization vs Polymorphism</td>
+    </tr>
+    <tr align="center">
+        <td>Date</td>
+        <td>Title & Link</td>
+    </tr>
+    <tr align="center">
+        <td>23-3-21(tue.)</td>
+        <td><a href="https://youtu.be/mVtVbVFCSUo">한글Rust_068⭐️Rust Monomorphism vs Polymorphism</a></td>
+    </tr>
+</table>
