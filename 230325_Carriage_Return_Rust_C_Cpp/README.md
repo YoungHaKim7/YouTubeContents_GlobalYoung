@@ -1,3 +1,7 @@
+# Bing AI 
+
+https://www.bing.com/search?form=MY0291&OCID=MY0291&q=Bing+AI&showconv=1
+
 # Using a 1930 Teletype as a Linux Terminal | CuriousMarc
 
 https://youtu.be/2XLZ4Z8LpEE
