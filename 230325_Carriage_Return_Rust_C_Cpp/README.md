@@ -10,7 +10,7 @@ https://youtu.be/2XLZ4Z8LpEE
 
 https://youtu.be/MikoF6KZjm0
 
-# CR(\r), LF(\n) ㅇㅣ란 무엇인가?
+# CR(\r), LF(\n) 이란 무엇인가?
 
 - CR Carriage Return(CR)
 
