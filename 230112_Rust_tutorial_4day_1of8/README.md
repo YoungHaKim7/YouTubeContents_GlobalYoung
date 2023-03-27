@@ -1,4 +1,4 @@
-# Easy Rust \_\_ mithradates(Rust스승님)
+# Easy Rust \_\_ mithradates(Rust스승님My_Teacher)
 
 https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
 
