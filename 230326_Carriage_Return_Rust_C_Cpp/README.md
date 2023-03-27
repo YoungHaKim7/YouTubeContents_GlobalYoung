@@ -31,11 +31,9 @@ https://stackoverflow.com/questions/7372918/whats-the-use-of-r-escape-sequence
 
 https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
 
-<br>
 
 <hr>
 
-<br>
 
 # Carriage_Retrun
 
