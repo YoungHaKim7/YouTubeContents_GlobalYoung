@@ -30,6 +30,10 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
         <td>22-7-24(sun.)</td>
         <td><a href="https://youtu.be/OfClLUaWWKY">한글러스트Rust강의_032_Rust_Frontend_Tauri기초_프론트엔드 #rustlang #tauri #wasm</td>
     </tr>
+    <tr align="center">
+        <td>22-7-06(wed.)</td>
+        <td><a href="https://youtu.be/SpixjM86Z4I">한글러스트Rust강의_030_Rust_Webassembly_Todos앱만들기 #webassembly #rustlang #todo #yew</td>
+    </tr>
 </table>
 
 # FrontEnd & BackEnd
