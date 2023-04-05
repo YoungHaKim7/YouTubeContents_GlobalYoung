@@ -1,3 +1,7 @@
 # Building a Single-Threaded Web Server
 
 https://doc.rust-lang.org/book/ch20-01-single-threaded.html
+
+# helix-editor
+
+https://helix-editor.com/
