@@ -28,7 +28,7 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
 
 <br>
 
-# Helix (ver23.03) tutorial
+# Helix (ver23.03) tutorial (heilx was made of rust)
 
 - https://github.com/helix-editor/helix
 
