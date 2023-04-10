@@ -49,3 +49,9 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
         <td><a href="https://youtu.be/uwu0vv3em3c">한글Rust_071⭐️Rust Backend_WebSever_helix tutorial ver23.03 #helix #rustlang</td>
     </tr>
 </table>
+
+# Helix Editor Tutorial(220917)
+
+한글러스트Rust강의\_041⭐️Rust로 만든 에디터Helix기초\_helix tutorial #rustlang #helix
+
+- https://youtu.be/cZfF1XRoIC8
