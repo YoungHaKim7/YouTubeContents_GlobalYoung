@@ -38,6 +38,8 @@ https://youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE
 
 # FrontEnd & BackEnd
 
+https://github.com/YoungHaKim7/Rust_Tutorial_Full_course/tree/main/17_Rust_Web_Dev_FullStack
+
 - tauri[![crates.io](https://img.shields.io/crates/v/tauri.svg)](https://crates.io/crates/tauri)![Crates.io](https://img.shields.io/crates/l/tauri)![wasmtimeDownloads](https://img.shields.io/crates/d/tauri.svg)<a href="https://github.com/tauri-apps/tauri"><img alt="githubicon" width="20px" src="https://user-images.githubusercontent.com/67513038/218287708-001511d7-1cce-42d3-92d2-4a61193b38f0.png" /></a>![druidstar](https://img.shields.io/github/stars/tauri-apps/tauri.svg)
 
   - Build smaller, faster, and more secure desktop applications with a web frontend.
