@@ -60,7 +60,7 @@ c / c++ / zig  / rust
         <td><a href="https://youtu.be/uwu0vv3em3c">한글Rust_071⭐️Rust Backend_WebSever_helix tutorial ver23.03 #helix #rustlang</td>
     </tr>
     <tr align="center">
-        <td>22-9-17(sun.)</td>
+        <td>22-9-17(sat.)</td>
         <td>macOS</td>
         <td><a href="https://youtu.be/cZfF1XRoIC8">한글러스트Rust강의_041⭐️Rust로 만든 에디터Helix기초_helix tutorial #rustlang #helix</td>
     </tr>
