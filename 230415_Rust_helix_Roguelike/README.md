@@ -31,3 +31,32 @@ clangd -> C언어의 LSP 지원 -> 타입이 나온다.type
 c / c++ / zig  / rust 
 
 ```
+
+
+# Helix (ver23.03) tutorial (heilx was made of rust)
+
+- https://github.com/helix-editor/helix
+
+- https://helix-editor.com/
+
+- Helix Tutorial
+
+<table border="1">
+    <tr>
+    <td colspan="3" align="center">Rust (Helix Text editor)<br><a href="https://github.com/helix-editor/helix">Helix Text editor</td>
+    </tr>
+    <tr align="center">
+        <td>Date</td>
+        <td>OS</td>
+        <td>Title & Link</td>
+    </tr>
+    <tr align="center">
+        <td>23-4-16(sat.)</td>
+        <td>WindowsOS</td>
+        <td><a href="https://youtu.be/_KAnc1QehMk">한글Rust_072⭐️Rust ggez_game_helix tutorial ver23.03 WindowsOS #helix #inlayhint #rustlang #scoop</td>
+    <tr align="center">
+        <td>23-4-09(sun.)</td>
+        <td>Linux<br>& macOS</td>
+        <td><a href="https://youtu.be/uwu0vv3em3c">한글Rust_071⭐️Rust Backend_WebSever_helix tutorial ver23.03 #helix #rustlang</td>
+    </tr>
+</table>
