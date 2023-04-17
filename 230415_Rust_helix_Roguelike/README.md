@@ -32,7 +32,7 @@ c / c++ / zig  / rust
 
 ```
 
-<li><em>Front-end:</em> compiles source language to IR.</li>
+<li><strong><em>Front-end:</em></strong> compiles source language to IR.</li>
 
 Middle-end: optimizes IR.
 Back-end: compiles IR to machine code.
