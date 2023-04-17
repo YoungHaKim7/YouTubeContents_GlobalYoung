@@ -32,6 +32,14 @@ c / c++ / zig  / rust
 
 ```
 
+<li><em>Front-end:</em> compiles source language to IR.</li>
+
+Middle-end: optimizes IR.
+Back-end: compiles IR to machine code.
+
+
+![Screenshot 2023-04-18 at 6 48 33 AM](https://user-images.githubusercontent.com/67513038/232618404-240ff4b0-a6af-473f-b968-19d7050939b7.png)
+
 
 # Helix (ver23.03) tutorial (heilx was made of rust)
 
