@@ -1,6 +1,8 @@
 # Rust 의 다형성 - static 과 dynamic dispatch (C++ 을 곁들인..) | 출처: 모두의 코드
 
-https://modoocode.com/334
+- Rust vs C++ 개념을 비교해서 친절히 설명해줌
+
+  - https://modoocode.com/334
 
 <hr>
 
