@@ -1,6 +1,6 @@
 # Result
 
-```
+```rust
 $ cargo expand --bin derive_macros_in_rust02
 
     Checking derive_macros_in_rust02 v0.1.0 (D:\young_project\rust_lang\YouTubeContents_GlobalYoung\999993_Derive_macro_reflective\derive_macros_in_rust02)
@@ -37,7 +37,7 @@ fn main() {
 
 - cargo expand --lib
 
-```
+```rust
 $ cargo expand --lib
   Checking derive_macros_in_rust02 v0.1.0 (D:\young_project\rust_lang\YouTubeContents_GlobalYoung\999993_Derive_macro_reflective\derive_macros_in_rust02)
     Finished dev [unoptimized + debuginfo] target(s) in 0.06s
