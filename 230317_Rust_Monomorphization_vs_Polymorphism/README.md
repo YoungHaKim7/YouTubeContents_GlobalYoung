@@ -49,6 +49,22 @@ timeline
 - https://oswalt.dev/2021/06/polymorphism-in-rust/
 
 - https://en.wikipedia.org/wiki/Parametric_polymorphism
+  - Poly 사전적 의미 https://www.dictionary.com/browse/poly
+    - noun,plural pol·ies.
+
+      - Informal. polyester (def. 2):
+
+      - a blend of poly and cotton.
+
+
+      - a fabric or garment made of polyester.
+
+
+    - adjective
+
+      - made of or containing polyester:
+
+      - a poly swimsuit.
 
 # Debugging LLVM
 
