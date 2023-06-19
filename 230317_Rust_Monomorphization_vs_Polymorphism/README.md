@@ -50,21 +50,7 @@ timeline
 
 - https://en.wikipedia.org/wiki/Parametric_polymorphism
   - Poly 사전적 의미 https://www.dictionary.com/browse/poly
-    - noun,plural pol·ies.
-
-      - Informal. polyester (def. 2):
-
-      - a blend of poly and cotton.
-
-
-      - a fabric or garment made of polyester.
-
-
-    - adjective
-
-      - made of or containing polyester:
-
-      - a poly swimsuit.
+    - a combining form with the meanings “much, many” and, in chemistry, “polymeric,” used in the formation of compound words: polyandrous; polyculture; polyethylene.
 
   - Morpho Definition & Meaning https://www.dictionary.com/browse/morpho
 
