@@ -40,17 +40,20 @@ pub fn get_error_views<G: Html>() -> ErrorViews<G> {
                 p { "Sorry, but a critical internal error has occured. This has been automatically reported to our team, who'll get on it as soon as possible. In the mean time, please try reloading the page."}
             },
         ),
-        ClientError::FetchError(_) => {
-            (view! { cx,
+        ClientError::FetchError(_) => (
+            view! { cx,
+                title { "Error"}
+            },
+            view! { cx,
                 p { "A network error occured, do you have an internet connection? (If you do, try reloading the page.)"}
-            })
-        }
+            },
+        ),
         _ => (
             view! { cx,
                 title { "Error" }
             },
             view! { cx,
-            p { (foramt!("An internal error has occurred: '{}'.", err))}},
+            p { (format!("An internal error has occurred: '{}'.", err))}},
         ),
     })
 }
