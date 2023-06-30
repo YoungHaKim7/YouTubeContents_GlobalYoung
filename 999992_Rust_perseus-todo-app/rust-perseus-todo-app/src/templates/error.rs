@@ -13,6 +13,24 @@ pub fn get_error_views<G: Html>() -> ErrorViews<G> {
                     p { "Sorry, that page doesn't seem to exist. "}
                 },
             ),
+            // 4xx is a client error
+            _ if (400..500).contains(&status) => (
+                view! { cx,
+                    title { "Error" }
+                },
+                view! { cx,
+                    p { "There was something wrong with the last request, please try reloding the page."}
+                },
+            ),
+            // 5xx is a server error
+            _ => (
+                view! { cx,
+                    title { "Error"}
+                },
+                view! { cx,
+                p { "Sorry, our server experienced an internal error. Please try reloading the page." }
+                },
+            ),
         },
         ClientError::Panic(_) => (
             view! { cx,
@@ -27,10 +45,12 @@ pub fn get_error_views<G: Html>() -> ErrorViews<G> {
                 p { "A network error occured, do you have an internet connection? (If you do, try reloading the page.)"}
             })
         }
-        ClientError::PluginError(_) => todo!(),
-        ClientError::InvariantError(_) => todo!(),
-        ClientError::ThawError(_) => todo!(),
-        ClientError::PlatformError(_) => todo!(),
-        ClientError::PreloadError(_) => todo!(),
+        _ => (
+            view! { cx,
+                title { "Error" }
+            },
+            view! { cx,
+            p { (foramt!("An internal error has occurred: '{}'.", err))}},
+        ),
     })
 }
