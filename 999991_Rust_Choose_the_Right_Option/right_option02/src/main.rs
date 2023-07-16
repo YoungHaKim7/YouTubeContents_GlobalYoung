@@ -11,12 +11,12 @@ impl Data {
 pub struct Widget(Option<Data>);
 
 impl Widget {
-    pub fn data_a(&self) -> &Option<Data> {
-        &self.0
+    pub fn data_a(&mut self) -> &mut Option<Data> {
+        &mut self.0
     }
 
-    pub fn data_b(&self) -> Option<&Data> {
-        self.0.as_ref()
+    pub fn data_b(&mut self) -> Option<&mut Data> {
+        self.0.as_mut()
     }
 }
 
