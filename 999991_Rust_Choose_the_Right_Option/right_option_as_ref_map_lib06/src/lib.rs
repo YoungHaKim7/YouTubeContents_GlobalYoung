@@ -33,5 +33,6 @@ mod tests {
         assert_eq!(a.is_some(), b.is_some());
 
         let crunch_a = a.as_ref().map(|data| data.crunch());
+        let crunch_b = b.map(|data| data.crunch());
     }
 }
