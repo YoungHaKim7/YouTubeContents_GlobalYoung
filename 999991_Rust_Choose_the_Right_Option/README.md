@@ -4,6 +4,8 @@ https://youtu.be/6c7pZYP_iIE
 
 # 결론 
 
+- Option _&T 짱 
+
 ```
 Option<&T> 이걸 주로 쓰자!!!!
   
