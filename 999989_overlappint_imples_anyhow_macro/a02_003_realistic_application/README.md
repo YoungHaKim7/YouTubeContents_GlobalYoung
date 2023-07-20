@@ -20,3 +20,15 @@ warning: `a02_003_realistic_application` (bin "a02_003_realistic_application") g
 called Error::from_fmt
 called Error::from_std_error
 ```
+
+# Limitations
+The way that this technique applies method resolution cannot be described by a trait bound, so for practical purposes you should think of this technique as working in macros only.
+
+That is, we can't do:
+
+```rust
+pub fn demo<T: ???>(value: T) -> String {
+    (&value).my_to_string()
+}
+```
+
