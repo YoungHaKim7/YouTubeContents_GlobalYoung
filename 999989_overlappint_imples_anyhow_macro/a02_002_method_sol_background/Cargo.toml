@@ -1,0 +1,8 @@
+[package]
+name = "a02_002_method_sol_background"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
