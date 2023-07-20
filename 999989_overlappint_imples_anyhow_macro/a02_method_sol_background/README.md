@@ -1,0 +1,7 @@
+# Result
+
+```
+
+called on Value
+
+```
