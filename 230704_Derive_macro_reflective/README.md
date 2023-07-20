@@ -14,7 +14,7 @@ https://youtu.be/XY0yR6IPbhw
         <td>Title & Link</td>
     </tr>
     <tr align="center">
-        <td>23-7-04(sat.)</td>
+        <td>23-7-04(tue.)</td>
         <td>macOS</td>
         <td><a href="https://youtu.be/jziNiwc3rzY">한글Rust_073⭐️Rust Derive macro 매크로 연습<br>perseus helix</td>
 </table>
