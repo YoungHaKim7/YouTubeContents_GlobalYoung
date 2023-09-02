@@ -2,6 +2,7 @@
 #include <iostream>
 #include <exec/kuro.hpp>
 #include <thread>
+#include "../cpp_lang_coroutines/unique_generator.h"
 
 template <typename... Values>
 auto report(Values... values) {
