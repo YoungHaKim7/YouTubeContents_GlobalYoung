@@ -1,5 +1,5 @@
 [package]
-name = "debugging_helix"
+name = "thread_pid_arc_rc"
 version = "0.1.0"
 edition = "2021"
 
