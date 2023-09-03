@@ -13,3 +13,20 @@ https://github.com/YoungHaKim7/rust_vim_setting
 # When or why should I use a Mutex over an RwLock?
 
 https://stackoverflow.com/questions/50704279/when-or-why-should-i-use-a-mutex-over-an-rwlock
+
+
+# Rust (Helix Text Editor)
+
+<table border="1">
+    <tr>
+    <td colspan="2" align="center">Rust tutorial</td>
+    </tr>
+    <tr align="center">
+        <td>Date</td>
+        <td>Title & Link</td>
+    </tr>
+    <tr align="center">
+        <td>23-9-03(sun.)</td>
+        <td><a href="https://youtu.be/ChzrzqFRjLI?si=GuEYBe10GnnoKQx1">한글Rust_075⭐️Rust Helix Debugging 디버깅 연습 #helix </td>
+    </tr>
+</table>
