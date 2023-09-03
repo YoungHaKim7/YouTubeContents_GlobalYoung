@@ -30,3 +30,7 @@ https://stackoverflow.com/questions/50704279/when-or-why-should-i-use-a-mutex-ov
         <td><a href="https://youtu.be/ChzrzqFRjLI?si=GuEYBe10GnnoKQx1">한글Rust_075⭐️Rust Helix Debugging 디버깅 연습 #helix </td>
     </tr>
 </table>
+
+# Thread Scope
+
+https://doc.rust-lang.org/std/thread/fn.scope.html
