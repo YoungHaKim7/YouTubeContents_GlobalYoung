@@ -3,3 +3,8 @@
 # Helix Debugger-Configurations
 
 https://github.com/helix-editor/helix/wiki/Debugger-Configurations#configure-debuggers
+
+
+# Vim Settings & Helix Settings
+
+https://github.com/YoungHaKim7/rust_vim_setting
