@@ -8,3 +8,8 @@ https://github.com/helix-editor/helix/wiki/Debugger-Configurations#configure-deb
 # Vim Settings & Helix Settings
 
 https://github.com/YoungHaKim7/rust_vim_setting
+
+
+# When or why should I use a Mutex over an RwLock?
+
+https://stackoverflow.com/questions/50704279/when-or-why-should-i-use-a-mutex-over-an-rwlock
