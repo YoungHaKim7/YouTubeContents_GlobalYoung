@@ -5,10 +5,13 @@ fn main() {
 
     for _ in 0..10 {
         let counter = Rc::clone(&counter);
+        let mut lock = counter.lock().unwrap();
+        *lock += 1;
         println!(
-            "Thread ID: {:?} Process ID: {}",
+            "Thread ID: {:?} Process ID: {} / print lock count: {:?}",
             thread::current().id(),
             process::id(),
+            lock
         );
         // let handle = thread::spawn(move || {
         //     let mut lock = counter.lock().unwrap();
