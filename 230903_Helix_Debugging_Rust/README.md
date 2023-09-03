@@ -19,7 +19,7 @@ https://stackoverflow.com/questions/50704279/when-or-why-should-i-use-a-mutex-ov
 
 <table border="1">
     <tr>
-    <td colspan="2" align="center">Rust tutorial</td>
+    <td colspan="2" align="center">Helix Text Editor tutorial(Debugging)</td>
     </tr>
     <tr align="center">
         <td>Date</td>
