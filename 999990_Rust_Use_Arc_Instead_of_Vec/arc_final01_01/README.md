@@ -1,5 +1,36 @@
 # Result
 
+
+```
+db Person { name: "John Doe", age: 30 }
+db Person { name: "Gyoung", age: 40 }
+
+
+$ cargo size
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+warning: fields `name` and `age` are never read
+ --> src/main.rs:5:5
+  |
+4 | struct Person {
+  |        ------ fields in this struct
+5 |     name: String,
+  |     ^^^^
+6 |     age: u32,
+  |     ^^^
+  |
+  = note: `Person` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  = note: `#[warn(dead_code)]` on by default
+
+warning: 1 warning emitted
+
+__TEXT	__DATA	__OBJC	others	dec	hex
+294912	16384	0	4295213056	4295524352	100088000
+
+```
+
+
+- 다른 Result
+
 ```
 cargo size
     Finished dev [unoptimized + debuginfo] target(s) in 0.00s
