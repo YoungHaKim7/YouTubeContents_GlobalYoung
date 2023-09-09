@@ -1,7 +1,0 @@
-.DS_Store
-/target
-.DS_Store
-Cargo.lock
-/.vscode
-dist/
-pkg/
