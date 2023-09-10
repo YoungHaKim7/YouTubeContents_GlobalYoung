@@ -38,6 +38,8 @@ fn main() {
     shared_vec.push(my_data_final);
     let arc_shared: Arc<[_]> = Arc::from(shared_vec.clone()); // 16bytes
 
+    // let my_vec = vec![];
+
     println!("{:#?}", &shared);
     println!("{:#?}", &shared_vec);
     println!("{:#?}", &arc_shared);
