@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 struct Data1 {
     dummy_num: u32, // 4bytes
 }
@@ -18,6 +18,8 @@ fn main() {
     let my_data10 = Data1 { dummy_num: 10 };
     let my_data11 = Data1 { dummy_num: 11 };
 
+    let my_data_final = Data1 { dummy_num: 99 };
+
     let mut db = Vec::new(); // 24bytes
 
     db.push(my_data1);
@@ -32,6 +34,11 @@ fn main() {
     db.push(my_data10);
     db.push(my_data11);
     let shared: Arc<[_]> = Arc::from(db); // 16bytes
+    let mut shared_vec: Vec<_> = shared.to_vec().clone(); // 24bytes
+    shared_vec.push(my_data_final);
+    let arc_shared: Arc<[_]> = Arc::from(shared_vec.clone()); // 16bytes
 
     println!("{:#?}", &shared);
+    println!("{:#?}", &shared_vec);
+    println!("{:#?}", &arc_shared);
 }
