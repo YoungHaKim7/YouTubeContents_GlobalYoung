@@ -23,7 +23,7 @@ https://crates.io/crates/pi_arr
         <td>Title & Link</td>
     </tr>
     <tr align="center">
-        <td>23-9-09(sat.)</td>
+        <td>23-9-10(sun.)</td>
         <td><a href="https://youtu.be/gx-VV-Ht8RA?si=cG1t6ajB1e4KYx38">한글Rust_077⭐️Rust Arc최적화 Part2 이제 Vec보다는 Arc_T_ #arc #optimization #rust</td>
     </tr>
 </table>
