@@ -1,3 +1,19 @@
+# 학습 목표 
+- C & Rust & Assembly 다 합니다.
+  - https://github.com/YoungHaKim7/YouTubeContents_GlobalYoung
+
+- 어셈블리는 가볍게 
+
+- 1. C언어 fsanitize 이게 해보기 
+https://github.com/YoungHaKim7/c_project
+- 2. objdump 로 변수에 할당된 변수 확인하기 (Intel CPU, Little Endian방식 확인
+- 3. Rust String 집중 분석
+  - Rust vs C String 더 깊게 들어가기
+    - Working with strings in Rust
+      - https://fasterthanli.me/articles/working-with-strings-in-rust
+
+<hr>
+
 # How to iterate over Unicode grapheme clusters in Rust?
 
 https://stackoverflow.com/questions/58770462/how-to-iterate-over-unicode-grapheme-clusters-in-rust
