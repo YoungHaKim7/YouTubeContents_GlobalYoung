@@ -1,3 +1,7 @@
+# Rust vs C String 더 깊게 들어가기
+  - Working with strings in Rust 
+    - https://fasterthanli.me/articles/working-with-strings-in-rust
+    
 # Rust Memory layout
 
 -  rust memory distribution
