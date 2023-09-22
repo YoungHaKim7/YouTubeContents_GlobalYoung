@@ -2,6 +2,12 @@
 
 https://stackoverflow.com/questions/58770462/how-to-iterate-over-unicode-grapheme-clusters-in-rust
 
+# It’s Not Wrong that "🤦🏼‍♂️".length == 7
+
+https://hsivonen.fi/string-length/
+
+
+<hr>
 
 # ```--fsanitize=address``` 사용법
 
