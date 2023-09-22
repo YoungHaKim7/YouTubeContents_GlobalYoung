@@ -7,6 +7,10 @@ https://stackoverflow.com/questions/58770462/how-to-iterate-over-unicode-graphem
 https://hsivonen.fi/string-length/
 
 
+# c언어의 아스키 테이블 0번 은 Null 
+
+https://en.wikipedia.org/wiki/Null-terminated_string
+
 <hr>
 
 # ```--fsanitize=address``` 사용법
