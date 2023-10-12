@@ -35,6 +35,10 @@ Summary
     6.24 ± 0.10 times faster than find . -type f -name ".DS_Store"
 ```
 
+- Rust로 만든 find보다 10배 더 빠름 
+
+https://github.com/sharkdp/fd
+
 # Benchmark Tools
 
 - https://github.com/sharkdp/hyperfine
