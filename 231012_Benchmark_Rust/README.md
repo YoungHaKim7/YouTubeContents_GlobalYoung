@@ -27,3 +27,7 @@ Summary
 # Why is iterator so much faster? 
 
 https://www.reddit.com/r/rust/comments/eiwhkn/why_is_iterator_so_much_faster/
+
+# When to use iterators vs. loops?  
+
+https://www.reddit.com/r/rust/comments/16nl7j6/when_to_use_iterators_vs_loops/
