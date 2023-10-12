@@ -18,6 +18,23 @@ Summary
 
 ```
 
+- test 2
+
+```bash
+hyperfine --warmup 3 'fd -H .DS_Store' 'find . -type f -name ".DS_Store"'
+Benchmark 1: fd -H .DS_Store
+  Time (mean ± σ):      48.1 ms ±   0.5 ms    [User: 76.4 ms, System: 207.9 ms]
+  Range (min … max):    47.3 ms …  49.5 ms    58 runs
+
+Benchmark 2: find . -type f -name ".DS_Store"
+  Time (mean ± σ):     300.3 ms ±   3.8 ms    [User: 19.6 ms, System: 279.8 ms]
+  Range (min … max):   297.0 ms … 307.0 ms    10 runs
+
+Summary
+  fd -H .DS_Store ran
+    6.24 ± 0.10 times faster than find . -type f -name ".DS_Store"
+```
+
 # Benchmark Tools
 
 - https://github.com/sharkdp/hyperfine
