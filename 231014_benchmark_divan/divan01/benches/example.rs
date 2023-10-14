@@ -121,3 +121,13 @@ fn fibonacci_fast() -> u64 {
         }
     }
 }
+
+#[divan::bench]
+fn fibonacci_slow_slow() {
+    fn fibonacci_slow(n: u64) -> u64 {
+        match n {
+            0 | 1 => 1,
+            n => fibonacci_slow(n - 1) + fibonacci_slow(n - 2),
+        }
+    }
+}
