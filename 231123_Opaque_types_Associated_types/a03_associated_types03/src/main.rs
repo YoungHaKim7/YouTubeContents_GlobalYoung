@@ -27,5 +27,7 @@ impl Graph for MyGraph {
 }
 
 fn main() {
+    let graph = MyGraph;
+    let obj = Box::new(graph) as Box<dyn Graph<N = Node, E = Edge>>;
     println!("Hello, world!");
 }
