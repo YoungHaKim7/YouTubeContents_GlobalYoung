@@ -1,0 +1,11 @@
+[package]
+name = "a01_egui_hello_world"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eframe = { version = "0.24.0", features = ["__screenshot"] }
+egui_extras = { version = "0.24.0", features = ["image"] }
+env_logger = "0.10.1"
