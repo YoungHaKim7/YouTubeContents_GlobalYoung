@@ -40,3 +40,5 @@ https://youtu.be/grU-4u0Okto
 # 공부하자 트레이트 Traits __Rust Syntax상식❤️) Traits -
 
 https://economiceco.tistory.com/m/14839
+
+- https://github.com/pretzelhammer/rust-blog
