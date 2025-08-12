@@ -13,3 +13,7 @@
 # Tetris Design Guideline 2009
 
 - https://ia904609.us.archive.org/27/items/2009-tetris-variant-concepts_202201/2009%20Tetris%20Design%20Guideline.pdf
+
+- 영상 참고
+- Tetris in Rust from scratch | Over Developed(영상 모아 보기)
+  - https://youtube.com/playlist?list=PLBNbqulT6FWw9C39_WIT_dcCIj1AdxiAy&si=nlB35oO62DO-7Rz0
