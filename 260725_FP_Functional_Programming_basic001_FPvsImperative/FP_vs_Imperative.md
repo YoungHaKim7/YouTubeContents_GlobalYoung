@@ -3,7 +3,7 @@ marp: true
 theme: uncover
 ---
 
-![width: 50px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU)
+![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) ![width:52px](https://private-user-images.githubusercontent.com/67513038/359108754-41f357e5-7664-4b2a-8d70-bdfcf0102d36.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MjU1NzgsIm5iZiI6MTc4NDgyNTI3OCwicGF0aCI6Ii82NzUxMzAzOC8zNTkxMDg3NTQtNDFmMzU3ZTUtNzY2NC00YjJhLThkNzAtYmRmY2YwMTAyZDM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDE2NDc1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0NTZmZmRkOGNhOWJkMWVmMmZkN2NjN2M1MzY2ZmQ5ZTM2OTExZWVlZjFlOTdjYzA0MThmMTk5N2ZlOGZiN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.s7qqhGaoOqkU-4NFAgw2YR9cPgoiHX92pHdHo7tMTeo)
 
 # Hello, FP(Functional Programming) 기초 001
 
@@ -69,6 +69,19 @@ https://github.com/Younghakim7
 
 <!-- _color: white -->
 
+- 함수형 프로그래밍은 명령 실행보다 표현식의 평가를 강조하는 프로그래밍 스타일입니다. 이러한 언어의 표현은 기본 값을 결합하기 위해 함수를 사용하여 형성됩니다. 함수형 언어는 함수형 스타일의 프로그래밍을 지원하고 장려하는 언어입니다.
+
+—Comp.lang.functional에 대한 FAQ
+
+- 다음에서 발췌
+  -  Functional Programming in C++
+    - Ivan Čukić
+
+
+---
+
+<!-- _color: white -->
+
 Ivan Cukic
 
 # Functional Programming in C++: How to improve your C++ programs using functional techniques
@@ -88,6 +101,11 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
     - 함수 자체를 변수로 저장 가능
   - 2. Immutability:
     - 데이터의 불변성 - 병렬 실행시 변수가 예상 되기 때문에 통제하기 쉽다.
+
+---
+
+<!-- _color: white -->
+
   - 3. First-Class Functions: 
     - 1급 함수로 관리한다
     - 일급 함수: 함수는 다른 데이터 유형과 마찬가지로 취급됩니다. 변수에 저장하거나, 다른 함수의 인수로 전달하거나, 함수에서 반환할 수 있습니다.
@@ -98,14 +116,87 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
 
 ---
 
+
 <!-- _color: white -->
 
 
-https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-
+- https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9A%94%EC%95%BD
 
 # 러스트 코드와 C++23코드를 예시로 하나씩 알아보자
 
 ---
+
+<!-- _color: white -->
+
+- 명령형 vs 함수형 프로그래밍의 비교
+
+||명령형 프로그래밍|함수형 프로그래밍|
+|-|-|-|
+|프로그램이란?|프로그램은 명령의 수행이다.|프로그램은 함수의 계산이다.|
+|중점적 시작|어떻게에 초점<br />(how to)|무엇에 초점<br />(what)|
+|이론적 배경|튜링 머신|람다 계산식|
+|주요 프로그래밍 언어|C, Java 등 대부분의 언어|Scheme, Haskell, ML, Erlang|
+
+
+---
+
+<!-- _color: white -->
+
+
+
+- 여러분들은 아마도 이런 코딩에 익숙하실겁니다.
+
+- C++23
+
+```cpp
+// Imperative
+#include <print>
+
+int main() {
+    int sum = 0;
+
+    for (int i = 1; i <= 10; ++i) {
+        sum += i;
+    }
+
+    std::println("{}", sum);
+}
+```
+
+<style>
+.hljs-string {
+  color: #ff0000 !important;
+}
+.section {
+  background-color: #1a1b26;
+  color: #c0caf5;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+.h1, h2, h3 {
+  color: #7aa2f7;
+}
+.code {
+  background-color: #24283b;
+  color: #bb9af7;
+}
+.pre {
+  background-color: #24283b;
+  color: #7dcfff;
+}
+.a {
+  color: #73daca;
+}
+.footer {
+  color: #565f89;
+}
+</style>
+
+---
+
+<!-- _color: white -->
+
+---
+
 
 <!-- _color: white -->
 
@@ -119,6 +210,7 @@ https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B
   - 4. Higher-Order Functions: 
     - F
 
+---
 
 <!-- _color: white -->
 
