@@ -53,6 +53,32 @@ https://github.com/Younghakim7
 
 <!-- _color: white -->
 
+# FP(Functional programming) 기본 개념
+- ‘Functional programming is a style of programming that emphasizes the evaluation of expressions, rather than execution of commands. The expressions in these languages are formed by using functions to combine basic values. A functional language is a language that supports and encourages programming in a functional style.
+—FAQ for comp.lang.functional’
+
+- 함수형 프로그래밍은 명령 실행보다 표현식의 평가를 강조하는 프로그래밍 스타일입니다. 이러한 언어의 표현은 기본 값을 결합하기 위해 함수를 사용하여 형성됩니다. 함수형 언어는 함수형 스타일의 프로그래밍을 지원하고 장려하는 언어입니다.
+
+—Comp.lang.functional에 대한 FAQ
+
+- 다음에서 발췌
+  -  Functional Programming in C++
+    - Ivan Čukić
+
+---
+
+<!-- _color: white -->
+
+Ivan Cukic
+Functional Programming in C++: How to improve your C++ programs using functional techniques
+
+https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/B0978262WN/
+
+
+---
+
+<!-- _color: white -->
+
 감사합니다.
 
 End
