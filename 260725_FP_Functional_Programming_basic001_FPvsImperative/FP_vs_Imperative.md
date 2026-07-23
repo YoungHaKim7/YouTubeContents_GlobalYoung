@@ -80,6 +80,39 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
 
 <!-- _color: white -->
 
+# 5가지 핵심 개념 (FP)
+
+- The core concepts of functional programming include:
+
+  - 1. Pure Functions: 
+    - 함수 자체를 변수로 저장 가능
+  - 2. Immutability:
+    - 데이터의 불변성 - 병렬 실행시 변수가 예상 되기 때문에 통제하기 쉽다.
+  - 3. First-Class Functions: 
+    - 1급 함수로 관리한다
+    - 일급 함수: 함수는 다른 데이터 유형과 마찬가지로 취급됩니다. 변수에 저장하거나, 다른 함수의 인수로 전달하거나, 함수에서 반환할 수 있습니다.
+  - 4. Higher-Order Functions: 
+    - 고차 함수: 다른 함수를 인수로 받거나 다른 함수를 반환하는 함수입니다. 자바스크립트나 파이썬에서 map, filter, reduce와 같은 전통적인 반복문 구조를 대체하는 데 많이 사용됩니다.
+  - 5. 최대 장점 ( side effect가 없다) 
+    - 결과값의 안정성(1번의 원리를 활용한 효과)
+
+---
+
+<!-- _color: white -->
+
+# FP
+- 1. Pure Functions: 
+    - Functions that always return the exact same output for the same input and have no observable side effects (such as modifying a global variable or saving to a database).
+  - 2. Immutability:
+    - Data cannot be modified after it is created. To change a value, you must create a new copy of it, which eliminates the risk of hidden changes occurring elsewhere in your application.
+  - 3. First-Class Functions: 
+    - Functions are treated just like any other data type; they can be stored in variables, passed as arguments to other functions, or returned from them.
+  - 4. Higher-Order Functions: 
+    - F
+
+
+<!-- _color: white -->
+
 감사합니다.
 
 End
