@@ -6,14 +6,16 @@
 npm install --save-dev @marp-team/marp-cli
 ```
 
-- watch mode
+- Watch mode
 
 ```bash
 npx @marp-team/marp-cli@latest -w FP_vs_Imperative.md
 ```
 
-- compile html
+- Convert slide deck into HTML
 
 ```bash
 npx @marp-team/marp-cli@latest FP_vs_Imperative.md
 ```
+
+
