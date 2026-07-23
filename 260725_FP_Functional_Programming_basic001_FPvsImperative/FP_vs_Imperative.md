@@ -70,7 +70,8 @@ https://github.com/Younghakim7
 <!-- _color: white -->
 
 Ivan Cukic
-Functional Programming in C++: How to improve your C++ programs using functional techniques
+
+# Functional Programming in C++: How to improve your C++ programs using functional techniques
 
 https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/B0978262WN/
 
