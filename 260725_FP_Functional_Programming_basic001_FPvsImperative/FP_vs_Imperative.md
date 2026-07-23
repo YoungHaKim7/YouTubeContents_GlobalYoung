@@ -1,7 +1,10 @@
 ---
 marp: true
-theme: uncover
+color: white
+background-color: #050d1a
 ---
+
+<!-- class: invert -->
 
 ![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) ![width:52px](https://private-user-images.githubusercontent.com/67513038/359108754-41f357e5-7664-4b2a-8d70-bdfcf0102d36.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MjU1NzgsIm5iZiI6MTc4NDgyNTI3OCwicGF0aCI6Ii82NzUxMzAzOC8zNTkxMDg3NTQtNDFmMzU3ZTUtNzY2NC00YjJhLThkNzAtYmRmY2YwMTAyZDM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDE2NDc1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0NTZmZmRkOGNhOWJkMWVmMmZkN2NjN2M1MzY2ZmQ5ZTM2OTExZWVlZjFlOTdjYzA0MThmMTk5N2ZlOGZiN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.s7qqhGaoOqkU-4NFAgw2YR9cPgoiHX92pHdHo7tMTeo)
 
@@ -18,8 +21,6 @@ C++23 코드
 
 ---
 
-<!-- backgroundColor: black -->
-<!-- _color: white -->
 
 ## Watch and preview
 
@@ -164,31 +165,93 @@ int main() {
 ```
 
 <style>
-.hljs-string {
-  color: #ff0000 !important;
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+// https://github.com/highlightjs/highlight.js/blob/0c4cc8a1c3aa373aee06796433c1389e4d2a3a45/src/styles/solarized-dark.css
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #030d0f;
+  color: #839496;
 }
-.section {
-  background-color: #1a1b26;
-  color: #c0caf5;
-  font-family: 'Segoe UI', Roboto, sans-serif;
+
+.hljs-comment,
+.hljs-quote {
+  color: #586e75;
 }
-.h1, h2, h3 {
-  color: #7aa2f7;
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #859900;
 }
-.code {
-  background-color: #24283b;
-  color: #bb9af7;
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+  color: #2aa198;
 }
-.pre {
-  background-color: #24283b;
-  color: #7dcfff;
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #268bd2;
 }
-.a {
-  color: #73daca;
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #b58900;
 }
-.footer {
-  color: #565f89;
+
+/* Solarized Orange */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #cb4b16;
 }
+
+/* Solarized Red */
+.hljs-built_in,
+.hljs-deletion {
+  color: #dc322f;
+}
+
+.hljs-formula {
+  background: #073642;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
 </style>
 
 ---
@@ -214,9 +277,9 @@ int main() {
 
 <!-- _color: white -->
 
-감사합니다.
+# 감사합니다.
 
-End
+## End
 
 # <!--fit--> :+1:
 
