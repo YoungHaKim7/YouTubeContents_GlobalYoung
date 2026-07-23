@@ -100,6 +100,15 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
 
 <!-- _color: white -->
 
+
+https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-
+
+# 러스트 코드와 C++23코드를 예시로 하나씩 알아보자
+
+---
+
+<!-- _color: white -->
+
 # FP
 - 1. Pure Functions: 
     - Functions that always return the exact same output for the same input and have no observable side effects (such as modifying a global variable or saving to a database).
