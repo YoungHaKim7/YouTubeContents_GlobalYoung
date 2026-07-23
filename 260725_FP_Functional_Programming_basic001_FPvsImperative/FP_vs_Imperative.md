@@ -37,6 +37,11 @@ npx @marp-team/marp-cli@latest -w FP_vs_Imperative.md
 <!-- _color: white -->
 
 유튜버 : Gyoung
+- https://youtube.com/@globalyoung7
+
+- 유료 러스트 언어 강의 문의 010-2895-7174
+
+
 
 취 미 : 러스트 개발
 
