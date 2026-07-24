@@ -9,38 +9,38 @@ use std::{
 
 #[derive(Debug, Clone)]
 struct CountryStats {
-    min: u64,
-    max: u64,
-    sum: u64,
+    min_data: u64,
+    max_data: u64,
+    sum_data: u64,
     count: u64,
 }
 
 impl CountryStats {
     fn new(population: u64) -> Self {
         CountryStats {
-            min: population,
-            max: population,
-            sum: population,
+            min_data: population,
+            max_data: population,
+            sum_data: population,
             count: 1,
         }
     }
 
     fn update(&mut self, population: u64) {
-        self.min = self.min.min(population);
-        self.max = self.max.max(population);
-        self.sum += population;
+        self.min_data = self.min_data.min(population);
+        self.max_data = self.max_data.max(population);
+        self.sum_data += population;
         self.count += 1;
     }
 
     fn mean(&self) -> f64 {
-        self.sum as f64 / self.count as f64
+        self.sum_data as f64 / self.count as f64
     }
 
     // Merge two CountryStats (for combining results from different threads)
     fn merge(&mut self, other: &CountryStats) {
-        self.min = self.min.min(other.min);
-        self.max = self.max.max(other.max);
-        self.sum += other.sum;
+        self.min_data = self.min_data.min(other.min_data);
+        self.max_data = self.max_data.max(other.max_data);
+        self.sum_data += other.sum_data;
         self.count += other.count;
     }
 }
@@ -137,9 +137,9 @@ fn print_results(countries: &HashMap<String, CountryStats>) {
         print!(
             "{}={:.0}/{:.0}/{:.0}",
             name,
-            stats.min,
+            stats.min_data,
             stats.mean(),
-            stats.max
+            stats.max_data
         );
 
         if i < country_names.len() - 1 {
