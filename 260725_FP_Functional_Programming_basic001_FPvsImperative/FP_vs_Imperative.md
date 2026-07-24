@@ -811,6 +811,12 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 
 The complete architecture looks like this:
 
+---
+
+<!-- _color: white -->
+
+
+```
                     1 Billion Row File
                            │
                            │
@@ -839,6 +845,7 @@ The complete architecture looks like this:
                            │
                            ▼
                     Final result
+```
 
 
 ---
