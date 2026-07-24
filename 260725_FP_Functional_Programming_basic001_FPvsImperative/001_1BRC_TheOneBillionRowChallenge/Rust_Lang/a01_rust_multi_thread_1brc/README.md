@@ -25,6 +25,21 @@ Executed in   70.66 millis    fish           external
 
 - https://doc.rust-lang.org/stable/std/collections/struct.HashMap.html#method.entry
 
+```rs
+use std::collections::HashMap;
+
+let mut letters = HashMap::new();
+
+for ch in "a short treatise on fungi".chars() {
+    letters.entry(ch).and_modify(|counter| *counter += 1).or_insert(1);
+}
+
+assert_eq!(letters[&'s'], 2);
+assert_eq!(letters[&'t'], 3);
+assert_eq!(letters[&'u'], 1);
+assert_eq!(letters.get(&'y'), None);
+```
+
 <hr />
 
 - Perfect! The code is now working successfully. Here's what it accomplished:
