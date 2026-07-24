@@ -1,75 +1,145 @@
+use rayon::prelude::*;
 use std::collections::HashMap;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::path::PathBuf;
 
 #[derive(Debug, Clone)]
-struct StationStats {
-    min: f64,
-    max: f64,
-    sum: f64,
+struct CountryStats {
+    min: u64,
+    max: u64,
+    sum: u64,
     count: u64,
 }
 
-impl StationStats {
-    fn new(temp: f64) -> Self {
-        StationStats {
-            min: temp,
-            max: temp,
-            sum: temp,
+impl CountryStats {
+    fn new(population: u64) -> Self {
+        CountryStats {
+            min: population,
+            max: population,
+            sum: population,
             count: 1,
         }
     }
 
-    fn update(&mut self, temp: f64) {
-        self.min = self.min.min(temp);
-        self.max = self.max.max(temp);
-        self.sum += temp;
+    fn update(&mut self, population: u64) {
+        self.min = self.min.min(population);
+        self.max = self.max.max(population);
+        self.sum += population;
         self.count += 1;
     }
 
     fn mean(&self) -> f64 {
-        self.sum / self.count as f64
+        self.sum as f64 / self.count as f64
+    }
+
+    // Merge two CountryStats (for combining results from different threads)
+    fn merge(&mut self, other: &CountryStats) {
+        self.min = self.min.min(other.min);
+        self.max = self.max.max(other.max);
+        self.sum += other.sum;
+        self.count += other.count;
     }
 }
 
-fn parse_line(line: &str) -> Option<(&str, f64)> {
-    let (station, temp_str) = line.split_once(';')?;
-    let temp = temp_str.trim().parse().ok()?;
-    Some((station, temp))
+fn parse_csv_line(line: &str) -> Option<(&str, u64)> {
+    // Skip header line
+    if line.starts_with("\"city\"") {
+        return None;
+    }
+
+    // Parse CSV line: "city","city_ascii","lat","lng","country","iso2","iso3","admin_name","capital","population","id"
+    let parts: Vec<&str> = line.split(',').collect();
+    if parts.len() >= 11 {
+        let country = parts[4].trim_matches('"');
+        let population_str = parts[9].trim_matches('"');
+
+        // Parse population, skip if empty or invalid
+        if let Ok(population) = population_str.parse::<u64>() {
+            if population > 0 {
+                return Some((country, population));
+            }
+        }
+    }
+    None
 }
 
-fn process_file(path: &PathBuf) -> HashMap<String, StationStats> {
-    let file = File::open(path).expect("Failed to open file");
-    let reader = BufReader::new(file);
+fn process_chunk(lines: Vec<String>) -> HashMap<String, CountryStats> {
+    let mut countries: HashMap<String, CountryStats> = HashMap::new();
 
-    let mut stations: HashMap<String, StationStats> = HashMap::new();
-
-    for line in reader.lines() {
-        let line = line.expect("Failed to read line");
-
-        if let Some((station_name, temp)) = parse_line(&line) {
-            stations
-                .entry(station_name.to_string())
-                .and_modify(|stats| stats.update(temp))
-                .or_insert_with(|| StationStats::new(temp));
+    for line in lines {
+        if let Some((country_name, population)) = parse_csv_line(&line) {
+            countries
+                .entry(country_name.to_string())
+                .and_modify(|stats| stats.update(population))
+                .or_insert_with(|| CountryStats::new(population));
         }
     }
 
-    stations
+    countries
 }
 
-fn print_results(stations: &HashMap<String, StationStats>) {
+fn process_file_parallel(path: &PathBuf) -> HashMap<String, CountryStats> {
+    let file = File::open(path).expect("Failed to open file");
+    let reader = BufReader::new(file);
+
+    // Read all lines into a vector (for large files, you'd use chunked reading)
+    let lines: Vec<String> = reader.lines().filter_map(|line| line.ok()).collect();
+
+    println!("Read {} lines from file", lines.len());
+
+    // Split into chunks for parallel processing
+    let num_threads = rayon::current_num_threads();
+    let chunk_size = (lines.len() + num_threads - 1) / num_threads;
+
+    let chunks: Vec<_> = lines
+        .chunks(chunk_size)
+        .map(|chunk| chunk.to_vec())
+        .collect();
+
+    println!(
+        "Processing {} chunks using {} threads",
+        chunks.len(),
+        num_threads
+    );
+
+    // Process chunks in parallel
+    let results: Vec<HashMap<String, CountryStats>> =
+        chunks.into_par_iter().map(process_chunk).collect();
+
+    // Merge results from all threads
+    let mut merged_countries: HashMap<String, CountryStats> = HashMap::new();
+
+    for thread_result in results {
+        for (country_name, stats) in thread_result {
+            merged_countries
+                .entry(country_name)
+                .and_modify(|existing| existing.merge(&stats))
+                .or_insert(stats);
+        }
+    }
+
+    merged_countries
+}
+
+fn print_results(countries: &HashMap<String, CountryStats>) {
+    println!("Population Statistics by Country:");
     println!("{{");
 
-    let mut station_names: Vec<_> = stations.keys().collect();
-    station_names.sort();
+    let mut country_names: Vec<_> = countries.keys().collect();
+    country_names.sort();
 
-    for (i, name) in station_names.iter().enumerate() {
-        let stats = &stations[*name];
-        print!("{}={:.1}/{:.1}/{:.1}", name, stats.min, stats.mean(), stats.max);
+    for (i, name) in country_names.iter().enumerate() {
+        let stats = &countries[*name];
+        print!(
+            "{}={:.0}/{:.0}/{:.0}",
+            name,
+            stats.min,
+            stats.mean(),
+            stats.max
+        );
 
-        if i < station_names.len() - 1 {
+        if i < country_names.len() - 1 {
             print!(", ");
         }
     }
@@ -84,15 +154,17 @@ fn main() {
     let path = if args.len() > 1 {
         PathBuf::from(&args[1])
     } else {
-        println!("Usage: {} <path_to_measurements.txt>", args[0]);
-        println!("Reading from default path: measurements.txt");
-        PathBuf::from("measurements.txt")
+        println!("Usage: {} <path_to_worldcities.csv>", args[0]);
+        println!("Reading from default path: assets/worldcities.csv");
+        PathBuf::from("assets/worldcities.csv")
     };
 
     println!("Processing file: {}", path.display());
 
-    let stations = process_file(&path);
-    println!("Processed {} unique stations", stations.len());
+    // Use parallel processing for better performance
+    let countries = process_file_parallel(&path);
 
-    print_results(&stations);
+    println!("Processed {} unique countries", countries.len());
+
+    print_results(&countries);
 }
