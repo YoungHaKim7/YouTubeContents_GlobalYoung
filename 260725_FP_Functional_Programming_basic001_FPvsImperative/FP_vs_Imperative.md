@@ -733,14 +733,14 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 <!-- _color: white -->
 
 # FP
-- 1. Pure Functions: 
-    - Functions that always return the exact same output for the same input and have no observable side effects (such as modifying a global variable or saving to a database).
-  - 2. Immutability:
-    - Data cannot be modified after it is created. To change a value, you must create a new copy of it, which eliminates the risk of hidden changes occurring elsewhere in your application.
-  - 3. First-Class Functions: 
-    - Functions are treated just like any other data type; they can be stored in variables, passed as arguments to other functions, or returned from them.
-  - 4. Higher-Order Functions: 
-    -  Functions that take other functions as arguments or return them. They are heavily used to replace traditional looping constructs (e.g., using `map`, `filter`, and `reduce` in Javascript or Python).
+- ① . Pure Functions: 
+  - Functions that always return the exact same output for the same input and have no observable side effects (such as modifying a global variable or saving to a database).
+- ② . Immutability:
+  - Data cannot be modified after it is created. To change a value, you must create a new copy of it, which eliminates the risk of hidden changes occurring elsewhere in your application.
+- ③ . First-Class Functions: 
+  - Functions are treated just like any other data type; they can be stored in variables, passed as arguments to other functions, or returned from them.
+- ④ . Higher-Order Functions: 
+  -  Functions that take other functions as arguments or return them. They are heavily used to replace traditional looping constructs (e.g., using `map`, `filter`, and `reduce` in Javascript or Python).
 
 - Because FP avoids state changes, it is highly favored for writing concurrent, **multi-threaded** software where **thread safety** and data consistency are critical
   - FP는 상태 변경을 피하기 때문에 스레드 안전성과 데이터 일관성이 중요한 멀티 스레드 소프트웨어를 동시에 작성하는 데 매우 선호됩니다
