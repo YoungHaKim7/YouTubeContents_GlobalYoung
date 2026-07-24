@@ -10,12 +10,11 @@ background-color: #050d1a
 
 # Hello, FP(Functional Programming) 기초 001
 
-Imperative VS FP
+## Imperative VS FP
 
-명령형 프로그래밍과 함수형 프로그래밍을 알아보자
-
-C++23 코드
-러스트 코드를 활용해서 설명~
+- 명령형 프로그래밍과 함수형 프로그래밍을 알아보자
+  - C++23 코드 &&
+  - 러스트(Rust) 코드를 활용해서 설명~
 
 <!-- paginate : true -->
 
@@ -56,11 +55,11 @@ https://github.com/Younghakim7
 
 # FP(Functional programming) 기본 개념
 - ‘Functional programming is a style of programming that emphasizes the evaluation of expressions, rather than execution of commands. The expressions in these languages are formed by using functions to combine basic values. A functional language is a language that supports and encourages programming in a functional style.
-—FAQ for comp.lang.functional’
+- — FAQ for comp.lang.functional’
 
 - 함수형 프로그래밍은 명령 실행보다 표현식의 평가를 강조하는 프로그래밍 스타일입니다. 이러한 언어의 표현은 기본 값을 결합하기 위해 함수를 사용하여 형성됩니다. 함수형 언어는 함수형 스타일의 프로그래밍을 지원하고 장려하는 언어입니다.
 
-—Comp.lang.functional에 대한 FAQ
+- — Comp.lang.functional에 대한 FAQ
 
 - 다음에서 발췌
   -  Functional Programming in C++
@@ -71,12 +70,10 @@ https://github.com/Younghakim7
 <!-- _color: white -->
 
 - 함수형 프로그래밍은 명령 실행보다 표현식의 평가를 강조하는 프로그래밍 스타일입니다. 이러한 언어의 표현은 기본 값을 결합하기 위해 함수를 사용하여 형성됩니다. 함수형 언어는 함수형 스타일의 프로그래밍을 지원하고 장려하는 언어입니다.
-
-—Comp.lang.functional에 대한 FAQ
+  - —Comp.lang.functional에 대한 FAQ
 
 - 다음에서 발췌
-  -  Functional Programming in C++
-    - Ivan Čukić
+  -  Functional Programming in C++ | Ivan Čukić
 
 
 ---
@@ -91,6 +88,46 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
 
 
 ---
+
+<!-- _color: white -->
+
+- FP의 최대장점.(GY내가 생각하는 개인적인 생각)
+  - 1. Functions that always return the exact same output for the same input and have no observable side effects (such as modifying a global variable or saving to a database).
+    - 똑같은 입력 동일한 출력(부작용 없음. side effects ..x..)
+  - 2. Safe Threads (안정적인 쓰레드 관리, 동시실행, 병렬 코딩에 문제가 없다.)
+    - Concurrency & Parallels
+  - 3. 숙련자 개발자끼리 해당(코드 리딩이 쉽고, 코드가 무슨 의미를 하는지 & 원하는 결과값이 무엇인지 한눈에 알아보기 좋다. & (FP)다른 개발자 끼리도 금방 알아본다. 굳이 설명 안해줘도 다 알아먹음.)
+  - 4. 코드가 Imperative(명령형) 보다 FP가 짧게 코딩이 가능함.
+
+---
+
+<!-- _color: white -->
+
+## FP역사
+
+- 함수형 프로그래밍의 역사는 1930년대 수학자 알론조 처치(Alonzo Church)의 람다 대수(Lambda Calculus)에서 시작되어, Lisp 탄생, 학계 중심의 발전, 그리고 멀티코어 시대의 부활 과정을 거쳐왔습니다.
+  - https://ko.wikipedia.org/wiki/%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D
+
+- 이론적 태동과 Lisp (1930년대 ~ 1950년대)
+  - 람다 대수: 알론조 처치가 수학적 계산과 재귀를 연구하기 위해 개발한 형식 체계입니다.
+  - Lisp 탄생: 1958년 존 매카시(John McCarthy)가 람다 대수 아이디어를 바탕으로 최초의 함수형 특징을 지닌 프로그래밍 언어 Lisp를 개발했습니다.
+
+
+---
+
+<!-- _color: white -->
+
+
+- 학계의 발전과 현대적 언어 (1970년대 ~ 1990년대)
+  - ML과 Haskell: 1970년대 후반 에든버러 대학에서 ML 언어가 개발되었고, 1980년대에는 순수 함수형 언어인 Haskell이 등장했습니다.
+  - 학술적 도구: 이 시기의 함수형 프로그래밍은 주로 인공지능 연구나 학계에서 사용되었으며, 일반 산업계에서는 큰 주류가 되지 못했습니다.
+- 멀티코어 시대와 주류 언어의 통합 (2000년대 이후)
+  - 패러다임의 부활: <u>컴퓨터 CPU가 멀티코어 환경으로 진입하면서 동시성 처리가 중요</u>해졌고, 부작용(Side Effect)이 없는 함수형 프로그래밍이 재조명받았습니다.
+  - 현대 언어 적용: 자바(Java 8+), 자바스크립트, 파이썬 등 대다수의 현대 언어가 람다 표현식과 고차 함수 등 함수형 프로그래밍 기능을 적극적으로 수용하고 있습니다
+
+---
+
+
 
 <!-- _color: white -->
 
@@ -111,7 +148,7 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
     - 1급 함수로 관리한다
     - 일급 함수: 함수는 다른 데이터 유형과 마찬가지로 취급됩니다. 변수에 저장하거나, 다른 함수의 인수로 전달하거나, 함수에서 반환할 수 있습니다.
   - 4. Higher-Order Functions: 
-    - 고차 함수: 다른 함수를 인수로 받거나 다른 함수를 반환하는 함수입니다. 자바스크립트나 파이썬에서 map, filter, reduce와 같은 전통적인 반복문 구조를 대체하는 데 많이 사용됩니다.
+    - 고차 함수: 다른 함수를 인수로 받거나 다른 함수를 반환하는 함수입니다. 자바스크립트나 파이썬에서 `map`, `filter`, `reduce` 와 같은 전통적인 반복문 구조를 대체하는 데 많이 사용됩니다.
   - 5. 최대 장점 ( side effect가 없다) 
     - 결과값의 안정성(1번의 원리를 활용한 효과)
 
