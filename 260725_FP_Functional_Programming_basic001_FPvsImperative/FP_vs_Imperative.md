@@ -745,8 +745,71 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 - Because FP avoids state changes, it is highly favored for writing concurrent, **multi-threaded** software where **thread safety** and data consistency are critical
   - FP는 상태 변경을 피하기 때문에 스레드 안전성과 데이터 일관성이 중요한 멀티 스레드 소프트웨어를 동시에 작성하는 데 매우 선호됩니다
 
+---
+
+<!-- _color: white -->
+
+- 1억줄 되는 긴 csv를 읽을때 멀티 쓰레드는 빛을 바랜다.
+
+1️⃣🐝🏎️ The One Billion Row Challenge -- A fun exploration of how quickly 1B rows from a text file can be aggregated with Java
+- https://github.com/gunnarmorling/1brc
 
 ---
+
+<!-- _color: white -->
+
+- ① 1억줄 되는 긴 csv를 읽고
+- ③ cpu 멀티 쓰레딩 가능한 갯수를 확인 후
+- ③ chunks로 나눠서 따로 계산 후
+- ④ 계산 하면
+
+- Single Thread 보다 더 빠른 연산 결과를 얻을 수 있다.
+
+---
+
+<!-- _color: white -->
+
+- 내 계획표
+- The parallel architecture
+
+The complete architecture looks like this:
+
+                    1 Billion Row File
+                           │
+                           │
+                  Determine file size
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │  Divide into chunks │
+                └─────────────────────┘
+                           │
+           ┌───────────────┼───────────────┐
+           │               │               │
+           ▼               ▼               ▼
+       Chunk 0         Chunk 1         Chunk 2       ...
+           │               │               │
+           ▼               ▼               ▼
+       Thread 0         Thread 1         Thread 2
+           │               │               │
+           ▼               ▼               ▼
+    Local HashMap     Local HashMap     Local HashMap
+           │               │               │
+           └───────────────┼───────────────┘
+                           │
+                           ▼
+                    Merge partial maps
+                           │
+                           ▼
+                    Final result
+
+
+---
+
+<!-- _color: white -->
+
+---
+
 
 <!-- _color: white -->
 
