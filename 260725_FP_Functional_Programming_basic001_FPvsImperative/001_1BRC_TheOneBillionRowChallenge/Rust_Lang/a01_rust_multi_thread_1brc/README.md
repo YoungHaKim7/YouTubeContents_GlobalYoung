@@ -21,6 +21,12 @@ Executed in   70.66 millis    fish           external
 
 ```
 
+# entry mothod
+
+- https://doc.rust-lang.org/stable/std/collections/struct.HashMap.html#method.entry
+
+<hr />
+
 - Perfect! The code is now working successfully. Here's what it accomplished:
 
 ## ✅ **Summary of Changes**
