@@ -8,81 +8,80 @@ use std::{
 };
 
 #[derive(Debug, Clone)]
-struct CountryStats {
-    min_data: u64,
-    max_data: u64,
-    sum_data: u64,
+struct StationStats {
+    min_temp: f64,
+    max_temp: f64,
+    sum_temp: f64,
     count: u64,
 }
 
-impl CountryStats {
-    fn new(population: u64) -> Self {
-        CountryStats {
-            min_data: population,
-            max_data: population,
-            sum_data: population,
+impl StationStats {
+    fn new(temperature: f64) -> Self {
+        StationStats {
+            min_temp: temperature,
+            max_temp: temperature,
+            sum_temp: temperature,
             count: 1,
         }
     }
 
-    fn update(&mut self, population: u64) {
-        self.min_data = self.min_data.min(population);
-        self.max_data = self.max_data.max(population);
-        self.sum_data += population;
+    fn update(&mut self, temperature: f64) {
+        self.min_temp = self.min_temp.min(temperature);
+        self.max_temp = self.max_temp.max(temperature);
+        self.sum_temp += temperature;
         self.count += 1;
     }
 
     fn mean(&self) -> f64 {
-        self.sum_data as f64 / self.count as f64
+        self.sum_temp / self.count as f64
     }
 
-    // Merge two CountryStats (for combining results from different threads)
-    fn merge(&mut self, other: &CountryStats) {
-        self.min_data = self.min_data.min(other.min_data);
-        self.max_data = self.max_data.max(other.max_data);
-        self.sum_data += other.sum_data;
+    // Merge two StationStats (for combining results from different threads)
+    fn merge(&mut self, other: &StationStats) {
+        self.min_temp = self.min_temp.min(other.min_temp);
+        self.max_temp = self.max_temp.max(other.max_temp);
+        self.sum_temp += other.sum_temp;
         self.count += other.count;
     }
 }
 
-fn parse_csv_line(line: &str) -> Option<(&str, u64)> {
-    // Skip header line
-    if line.starts_with("\"city\"") {
+fn parse_measurement_line(line: &str) -> Option<(&str, f64)> {
+    // Skip comment lines
+    if line.starts_with('#') || line.is_empty() {
         return None;
     }
 
-    // Parse CSV line: "city","city_ascii","lat","lng","country","iso2","iso3","admin_name","capital","population","id"
-    let parts: Vec<&str> = line.split(',').collect();
-    if parts.len() >= 11 {
-        let country = parts[4].trim_matches('"');
-        let population_str = parts[9].trim_matches('"');
+    // Parse 1BRC format: station_name;temperature
+    // Example: "Tokyo;35.6897" or "New York;-12.5"
+    let parts: Vec<&str> = line.split(';').collect();
+    if parts.len() == 2 {
+        let station_name = parts[0].trim();
+        let temp_str = parts[1].trim();
 
-        // Parse population, skip if empty or invalid
-        if let Ok(population) = population_str.parse::<u64>() {
-            if population > 0 {
-                return Some((country, population));
-            }
+        // Parse temperature, skip if invalid
+        if let Ok(temperature) = temp_str.parse::<f64>() {
+            return Some((station_name, temperature));
         }
     }
     None
 }
 
-fn process_chunk(lines: Vec<String>) -> HashMap<String, CountryStats> {
-    let mut countries: HashMap<String, CountryStats> = HashMap::new();
+fn process_chunk(lines: Vec<String>) -> HashMap<String, StationStats> {
+    let mut stations: HashMap<String, StationStats> = HashMap::new();
 
     for line in lines {
-        if let Some((country_name, population)) = parse_csv_line(&line) {
-            countries
-                .entry(country_name.to_string())
-                .and_modify(|stats| stats.update(population))
-                .or_insert_with(|| CountryStats::new(population));
+        if let Some((station_name, temperature)) = parse_measurement_line(&line) {
+            stations
+                .entry(station_name.to_string())
+                .and_modify(|stats| stats.update(temperature))
+                .or_insert_with(|| StationStats::new(temperature));
         }
     }
 
-    countries
+    stations
 }
 
-fn process_file_parallel(path: &PathBuf) -> HashMap<String, CountryStats> {
+fn process_file_parallel(path: &PathBuf) -> HashMap<String, StationStats> {
     let file = File::open(path).expect("Failed to open file");
     let reader = BufReader::new(file);
 
@@ -107,42 +106,42 @@ fn process_file_parallel(path: &PathBuf) -> HashMap<String, CountryStats> {
     );
 
     // Process chunks in parallel
-    let results: Vec<HashMap<String, CountryStats>> =
+    let results: Vec<HashMap<String, StationStats>> =
         chunks.into_par_iter().map(process_chunk).collect();
 
     // Merge results from all threads
-    let mut merged_countries: HashMap<String, CountryStats> = HashMap::new();
+    let mut merged_stations: HashMap<String, StationStats> = HashMap::new();
 
     for thread_result in results {
-        for (country_name, stats) in thread_result {
-            merged_countries
-                .entry(country_name)
+        for (station_name, stats) in thread_result {
+            merged_stations
+                .entry(station_name)
                 .and_modify(|existing| existing.merge(&stats))
                 .or_insert(stats);
         }
     }
 
-    merged_countries
+    merged_stations
 }
 
-fn print_results(countries: &HashMap<String, CountryStats>) {
-    println!("Population Statistics by Country:");
+fn print_results(stations: &HashMap<String, StationStats>) {
+    println!("Temperature Statistics by Weather Station:");
     println!("{{");
 
-    let mut country_names: Vec<_> = countries.keys().collect();
-    country_names.sort();
+    let mut station_names: Vec<_> = stations.keys().collect();
+    station_names.sort();
 
-    for (i, name) in country_names.iter().enumerate() {
-        let stats = &countries[*name];
+    for (i, name) in station_names.iter().enumerate() {
+        let stats = &stations[*name];
         print!(
-            "{}={:.0}/{:.0}/{:.0}",
+            "{}={:.1}/{:.1}/{:.1}",
             name,
-            stats.min_data,
+            stats.min_temp,
             stats.mean(),
-            stats.max_data
+            stats.max_temp
         );
 
-        if i < country_names.len() - 1 {
+        if i < station_names.len() - 1 {
             print!(", ");
         }
     }
@@ -157,17 +156,17 @@ fn main() {
     let path = if args.len() > 1 {
         PathBuf::from(&args[1])
     } else {
-        println!("Usage: {} <path_to_worldcities.csv>", args[0]);
-        println!("Reading from default path: assets/worldcities.csv");
-        PathBuf::from("assets/worldcities.csv")
+        println!("Usage: {} <path_to_weather_stations.txt>", args[0]);
+        println!("Reading from default path: assets/weather_stations.csv");
+        PathBuf::from("assets/weather_stations.csv")
     };
 
     println!("Processing file: {}", path.display());
 
     // Use parallel processing for better performance
-    let countries = process_file_parallel(&path);
+    let stations = process_file_parallel(&path);
 
-    println!("Processed {} unique countries", countries.len());
+    println!("Processed {} unique weather stations", stations.len());
 
-    print_results(&countries);
+    print_results(&stations);
 }
