@@ -7,18 +7,21 @@
 # Marp ppt
 - https://www.npmjs.com/package/@marp-team/marp-cli
 
+## install(local)
 
 ```bash
 npm install --save-dev @marp-team/marp-cli
 ```
 
-- Watch mode
+## 내가 주로 쓰는법(`npx` 최고)
+
+- Watch mode(`npx`의 장점은 설치 없이 바로 가능한점, 내가 수정하면서 보고 싶으면 바로 이거)
 
 ```bash
 npx @marp-team/marp-cli@latest -w FP_vs_Imperative.md
 ```
 
-- Convert slide deck into HTML
+- Convert slide deck into HTML(`npx`의 장점은 설치 없이 바로 가능한점)
 
 ```bash
 npx @marp-team/marp-cli@latest FP_vs_Imperative.md
