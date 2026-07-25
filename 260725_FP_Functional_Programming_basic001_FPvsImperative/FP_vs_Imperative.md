@@ -20,6 +20,39 @@ background-color: #050d1a
 
 ---
 
+<!-- _color: white -->
+
+![width:52px](https://private-user-images.githubusercontent.com/67513038/359108754-41f357e5-7664-4b2a-8d70-bdfcf0102d36.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MjU1NzgsIm5iZiI6MTc4NDgyNTI3OCwicGF0aCI6Ii82NzUxMzAzOC8zNTkxMDg3NTQtNDFmMzU3ZTUtNzY2NC00YjJhLThkNzAtYmRmY2YwMTAyZDM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDE2NDc1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0NTZmZmRkOGNhOWJkMWVmMmZkN2NjN2M1MzY2ZmQ5ZTM2OTExZWVlZjFlOTdjYzA0MThmMTk5N2ZlOGZiN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.s7qqhGaoOqkU-4NFAgw2YR9cPgoiHX92pHdHo7tMTeo)
+
+```cpp
+auto result = input
+      | std::views::filter([](int x) {
+          return x % 2 == 0;
+      })
+      | std::views::transform([](int x) {
+          return x * 2;
+      });
+```
+
+---
+
+
+![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) 
+
+<!-- _color: white -->
+
+```rs
+let result: Vec<i32> = input
+                        .iter()
+                        .filter(|&&x| x % 2 == 0)
+                        .map(|&x| x * 2)
+                        .collect();
+```
+
+---
+
+
+
 
 ## Watch and preview
 
@@ -39,7 +72,9 @@ npx @marp-team/marp-cli@latest -w FP_vs_Imperative.md
 유튜버 : Gyoung
 - https://youtube.com/@globalyoung7
 
-- 유료 러스트 언어 강의 문의 010-2895-7174
+- 유료 러스트 언어 강의 문의 &  비지니스 문의
+  - ytok1108@kakao.com
+  - 동영상 하단 자세히 보기 클릭
 
 
 
@@ -98,6 +133,7 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
     - Concurrency & Parallels
   - 3. 숙련자 개발자끼리 해당(코드 리딩이 쉽고, 코드가 무슨 의미를 하는지 & 원하는 결과값이 무엇인지 한눈에 알아보기 좋다. & (FP)다른 개발자 끼리도 금방 알아본다. 굳이 설명 안해줘도 다 알아먹음.)
   - 4. 코드가 Imperative(명령형) 보다 FP가 짧게 코딩이 가능함.
+  - lazy & 최적화가 굿 (필요한 연산이 나올때까지 연산 하지 않음x, ex) Iterator)
 
 ---
 
@@ -776,6 +812,12 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
   - Data cannot be modified after it is created. To change a value, you must create a new copy of it, which eliminates the risk of hidden changes occurring elsewhere in your application.
 - ③ . First-Class Functions: 
   - Functions are treated just like any other data type; they can be stored in variables, passed as arguments to other functions, or returned from them.
+
+---
+
+<!-- _color: white -->
+
+
 - ④ . Higher-Order Functions: 
   -  Functions that take other functions as arguments or return them. They are heavily used to replace traditional looping constructs (e.g., using `map`, `filter`, and `reduce` in Javascript or Python).
 
