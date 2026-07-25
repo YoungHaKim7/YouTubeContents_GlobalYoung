@@ -29,11 +29,11 @@ Executed in   55.58 millis    fish           external
 ## Breakdown
 
 **Wall-clock time (what you experienced)**
-- `Executed in 2.96 secs` — Total elapsed time from start to finish
+- `Executed in 1.99 secs` — Total elapsed time from start to finish
 
 **CPU time breakdown**
-- `usr time 2.69 secs` — Time CPU spent executing **your program's code** (user-space)
-- `sys time 0.28 secs` — Time CPU spent in **kernel** doing system calls, I/O, etc.
+- `usr time 3.35 secs` — Time CPU spent executing **your program's code** (user-space)
+- `sys time 0.55 secs` — Time CPU spent in **kernel** doing system calls, I/O, etc.
 
 ## What the numbers tell you
 
