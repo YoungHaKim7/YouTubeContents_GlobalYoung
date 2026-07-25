@@ -13,9 +13,11 @@ Executed in    1.99 secs    fish           external
    sys time    0.55 secs    1.02 millis    0.55 secs
 ```
 
+- release된 파일로 바로 실행하
+
 - ./target/release/a.out
 
-```
+```bash
 $  time ./target/release/a01_rust_multi_thread_1brc
 ________________________________________________________
 Executed in   55.58 millis    fish           external
