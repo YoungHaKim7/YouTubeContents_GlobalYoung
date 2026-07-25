@@ -22,14 +22,14 @@
 | **Paradigm** | **C++23 Code** | **Rust Code** |
 |:------------|:---------------|:---------------|
 | **Imperative** | `int sum = 0;`<br>`for (int i = 1; i <= 10; ++i) {`<br> &emsp;   `sum += i;`<br>`}`<br>`std::println("{}", sum);`<br> | `let mut sum = 0;`<br>`for i in 1..=10 {`<br>    &emsp;`sum += i;`<br>`}`<br>`println!("{}", sum);` |
-| **Functional** | ```cpp<br>#include \<ranges\><br>#include \<algorithm\><br>auto numbers = std::views::iota(1, 11);<br>int sum = std::ranges::fold_left(<br>    numbers, 0, std::plus{}<br>);<br>std::println("{}", sum);<br>``` | ```rust<br>let sum = (1..=10)<br>    .fold(0, \|acc, x\| acc + x);<br>println!("{}", sum);<br>``` |
+| **Functional** | `#include <ranges>`<br>`#include <algorithm>`<br>`auto numbers = std::views::iota(1, 11);`<br>`int sum = std::ranges::fold_left(`<br>&emsp;`numbers, 0, std::plus{}`<br>`);`<br>`std::println("{}", sum);`<br> | `let sum = (1..=10)`<br>&emsp;`.fold(0, \|acc, x\| acc + x);`<br>`println!("{}", sum);` |
 
 ### Example 2: Transform and filter
 
 | **Paradigm** | **C++23 Code** | **Rust Code** |
 |:------------|:---------------|:---------------|
-| **Imperative** | ```cpp<br>std::vector\<int\> evens;<br>for (int i : input) {<br>    if (i % 2 == 0)<br>        evens.push_back(i * 2);<br>}<br>``` | ```rust<br>let mut evens = Vec::new();<br>for i in input {<br>    if i % 2 == 0 {<br>        evens.push(i * 2);<br>    }<br>}<br>``` |
-| **Functional** | ```cpp<br>auto result = input<br>  \| std::views::filter([](int x) {<br>      return x % 2 == 0;<br>  })<br>  \| std::views::transform([](int x) {<br>      return x * 2;<br>  });<br>``` | ```rust<br>let result: Vec\<i32\> = input<br>    .iter()<br>    .filter(\|&&x\| x % 2 == 0)<br>    .map(\|&x\| x * 2)<br>    .collect();<br>``` |
+| **Imperative** | `std::vector<int> evens;`<br>`for (int i : input) {`<br>&emsp;`if (i % 2 == 0)`<br>&emsp;&emsp;`evens.push_back(i * 2);`<br>`}`<br> | `let mut evens = Vec::new();`<br>`for i in input {`<br>&emsp;`if i % 2 == 0 {`<br>&emsp;&emsp;`evens.push(i * 2);`<br>&emsp;`}`<br>`}` |
+| **Functional** |`auto result = input`<br>&emsp;`\| std::views::filter([](int x) {`<br>&emsp;`return x % 2 == 0;`<br>`})`<br>&emsp;`\| std::views::transform([](int x) {`<br>&emsp;`return x * 2;`<br>`  });` | `let result: Vec<i32> = input`<br>&emsp;`.iter()`<br>&emsp;`.filter(\|&&x\| x % 2 == 0)`<br>&emsp;`.map(\|&x\| x * 2)`<br>&emsp;`.collect();` |
 
 ---
 
