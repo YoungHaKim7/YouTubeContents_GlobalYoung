@@ -169,7 +169,7 @@ void printResults(const StationMap &stations) {
     for (size_t i = 0; i < station_names.size(); ++i) {
         const auto &name = station_names[i];
         const auto &stats = stations.at(name);
-        std::cout << std::format("{}={:.1}/{:.1}/{:.1}", name, stats.min_temp,
+        std::cout << std::format("{}={:.1f}/{:.1f}/{:.1f}", name, stats.min_temp,
                                  stats.mean(), stats.max_temp);
 
         if (i < station_names.size() - 1) {
