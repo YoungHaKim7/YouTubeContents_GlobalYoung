@@ -24,6 +24,8 @@ background-color: #050d1a
 
 ![width:52px](https://private-user-images.githubusercontent.com/67513038/359108754-41f357e5-7664-4b2a-8d70-bdfcf0102d36.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MjU1NzgsIm5iZiI6MTc4NDgyNTI3OCwicGF0aCI6Ii82NzUxMzAzOC8zNTkxMDg3NTQtNDFmMzU3ZTUtNzY2NC00YjJhLThkNzAtYmRmY2YwMTAyZDM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDE2NDc1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0NTZmZmRkOGNhOWJkMWVmMmZkN2NjN2M1MzY2ZmQ5ZTM2OTExZWVlZjFlOTdjYzA0MThmMTk5N2ZlOGZiN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.s7qqhGaoOqkU-4NFAgw2YR9cPgoiHX92pHdHo7tMTeo)
 
+- FP sytle
+
 ```cpp
 auto result = input
       | std::views::filter([](int x) {
@@ -41,12 +43,14 @@ auto result = input
 
 <!-- _color: white -->
 
+- FP sytle
+
 ```rs
 let result: Vec<i32> = input
                         .iter()
                         .filter(|&&x| x % 2 == 0)
                         .map(|&x| x * 2)
-                        .collect();
+                       .collect();
 ```
 
 ---
@@ -83,8 +87,94 @@ npx @marp-team/marp-cli@latest -w FP_vs_Imperative.md
 https://github.com/Younghakim7
 
 
+---
+
+<!-- _color: white -->
+
+![width:52px](https://private-user-images.githubusercontent.com/67513038/359108754-41f357e5-7664-4b2a-8d70-bdfcf0102d36.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MjU1NzgsIm5iZiI6MTc4NDgyNTI3OCwicGF0aCI6Ii82NzUxMzAzOC8zNTkxMDg3NTQtNDFmMzU3ZTUtNzY2NC00YjJhLThkNzAtYmRmY2YwMTAyZDM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDE2NDc1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0NTZmZmRkOGNhOWJkMWVmMmZkN2NjN2M1MzY2ZmQ5ZTM2OTExZWVlZjFlOTdjYzA0MThmMTk5N2ZlOGZiN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.s7qqhGaoOqkU-4NFAgw2YR9cPgoiHX92pHdHo7tMTeo)
+
+- Imperative style
+
+```cpp
+std::vector<std::string> files = {"a.txt", "b.txt"};
+int total_lines = 0;
+
+for (const auto& file : files) {
+    std::ifstream f(file);
+    std::string line;
+    while (std::getline(f, line)) {
+        total_lines++;
+    }
+}
+```
 
 ---
+
+<!-- _color: white -->
+
+![width:52px](https://private-user-images.githubusercontent.com/67513038/359108754-41f357e5-7664-4b2a-8d70-bdfcf0102d36.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MjU1NzgsIm5iZiI6MTc4NDgyNTI3OCwicGF0aCI6Ii82NzUxMzAzOC8zNTkxMDg3NTQtNDFmMzU3ZTUtNzY2NC00YjJhLThkNzAtYmRmY2YwMTAyZDM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDE2NDc1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0NTZmZmRkOGNhOWJkMWVmMmZkN2NjN2M1MzY2ZmQ5ZTM2OTExZWVlZjFlOTdjYzA0MThmMTk5N2ZlOGZiN2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.s7qqhGaoOqkU-4NFAgw2YR9cPgoiHX92pHdHo7tMTeo)
+
+- FP style(Functional Programming)
+  - C++23
+
+```cpp
+const std::vector<std::string> files = {
+    "a.txt",
+    "b.txt"
+};
+
+const int total_lines = std::accumulate(
+    files.begin(),
+    files.end(),
+    0,
+    [](int total, const std::string& file) {
+        return total + count_lines(file);
+    }
+);
+```
+
+---
+
+![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) 
+
+
+- Imperative style(Rust)
+
+```rs
+let files = vec!["a.txt", "b.txt"];
+let mut total_lines = 0;
+
+for file in files {
+    let content = fs::read_to_string(file)?;
+    total_lines += content.lines().count();
+}
+```
+
+
+---
+
+![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) 
+
+- FP style(Functional Programming)
+  - Rust
+
+```rs
+
+let files = vec!["a.txt", "b.txt"];
+
+let total_lines: usize = files
+    .iter()
+    .map(|file| count_lines(file))
+    .collect::<Result<Vec<_>, _>>()?
+    .into_iter()
+    .sum();
+```
+
+---
+
+
+
+
 
 <!-- _color: white -->
 

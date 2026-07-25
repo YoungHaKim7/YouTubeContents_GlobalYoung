@@ -1,0 +1,6 @@
+[package]
+name = "b03_fp_style_try_fold"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

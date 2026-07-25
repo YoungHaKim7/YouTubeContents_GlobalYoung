@@ -1,0 +1,6 @@
+[package]
+name = "b02_fp_style_lines"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
