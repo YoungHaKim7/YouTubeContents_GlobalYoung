@@ -51,6 +51,16 @@ auto result = input
 - This is conceptually equivalent to your Rust/FP examples. The views are lazy (no computation happens until you iterate over result), which is a key functional programming principle.
 
 
+- Rust
+
+```rs
+let result: Vec<i32> = input
+                        .iter()
+                        .filter(|&&x| x % 2 == 0)
+                        .map(|&x| x * 2)
+                        .collect();
+```
+
 ---
 
 ## 🎯 Summary: Where Each Language Excels
