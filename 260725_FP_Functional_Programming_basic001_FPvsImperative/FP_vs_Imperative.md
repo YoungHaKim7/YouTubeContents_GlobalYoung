@@ -215,12 +215,80 @@ let total_lines: usize = files
     .into_iter()
     .sum();
 ```
+---
+
+<!-- _color: white -->
+
+- The `for` Loop Pattern Match
+
+- Unlike `while let`, which handles patterns that might fail (refutable patterns), a standard `for` **loop requires an irrefutable pattern**.
+- This means the pattern must match every item produced by the iterator. It is perfect for breaking down structures like tuples or structs on the fly.
 
 ---
 
+<!-- _color: white -->
+
+- Practical Example: Destructuring Tuples
+- You can destructure items right within the for iteration signature
+
+
+```rs
+fn main() {
+    let coordinates = vec![(0, 10), (5, 20), (10, 30)];
+
+    // Destructures each tuple directly into independent x and y variables
+    for (x, y) in coordinates {
+        println!("Point is at x: {}, y: {}", x, y);
+    }
+}
+```
+
+---
+
+<!-- _color: white -->
+
+- Direct Comparison
+
+|Feature | `while let` Loop | `for` Loop with Patterns|
+|-|-|-|
+|Pattern Type|Refutable (Can fail to match)|Irrefutable (Must always match)|
+|Primary Use<br />Case|Iterating over sequential state, streams,<br />or option changes  | Decomposing compound structures<br /> in a known collection|
+|Termination|Ends when the expression evaluates to<br />a non-matching pattern|Ends when the underlying iterator<br /> runs out of items|
 
 
 
+---
+
+<!-- _color: white -->
+
+
+- Advanced: Filtering with Iterators Instead
+  - If you find yourself trying to filter out values in a `for` loop using complex pattern matching, Rust community standards generally recommend chaining iterator methods over writing manual `if let` blocks inside loops.
+
+  - https://users.rust-lang.org/t/avoiding-while-with-break/17287
+
+---
+
+<!-- _color: white -->
+
+![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) 
+
+- FP style(Functional Programming)
+  - Rust
+
+```rs
+fn main() {
+    let items = vec![Some(1), None, Some(3)];
+
+    // Idiomatic way to safely unwrap and loop through only matching data
+    // 일치하는 데이터만 안전하게 풀 수 있는 관용적인 방법
+    for item in items.into_iter().flatten() {
+        println!("Found valid number: {}", item);
+    }
+}
+```
+
+---
 
 <!-- _color: white -->
 
