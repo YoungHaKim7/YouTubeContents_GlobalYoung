@@ -13,6 +13,16 @@ Executed in    1.99 secs    fish           external
    sys time    0.55 secs    1.02 millis    0.55 secs
 ```
 
+- ./target/release/a.out
+
+```
+$  time ./target/release/a01_rust_multi_thread_1brc
+________________________________________________________
+Executed in   55.58 millis    fish           external
+   usr time   61.82 millis    0.00 millis   61.82 millis
+   sys time   31.05 millis    1.10 millis   29.95 millis
+```
+
 
 ## Breakdown
 
