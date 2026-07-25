@@ -87,3 +87,68 @@ The tables show Rust positioned between C++23 Imperative and Functional:
 - More flexible paradigm mixing
 
 Both languages excel at functional programming - Rust with modern safety features, C++23 with powerful ranges and algorithms.
+
+# Imperative vs FP
+- Here's the nicely arranged code comparison:
+
+## 📝 Task: Count lines in multiple files
+
+### Imperative Approach
+
+**C++23:**
+```cpp
+std::vector<std::string> files = {"a.txt", "b.txt"};
+int total_lines = 0;
+
+for (const auto& file : files) {
+    std::ifstream f(file);
+    std::string line;
+    while (std::getline(f, line)) {
+        total_lines++;
+    }
+}
+```
+
+**Rust:**
+```rust
+let files = vec!["a.txt", "b.txt"];
+let mut total_lines = 0;
+
+for file in files {
+    let content = fs::read_to_string(file)?;
+    total_lines += content.lines().count();
+}
+```
+
+---
+
+### Functional Approach
+
+**C++23:**
+```cpp
+auto files = std::views::iota(1, 3)
+    | std::views::transform([](int i) {
+        return "file" + std::to_string(i);
+    });
+```
+
+**Rust:**
+```rust
+let total: usize = (1..3)
+    .map(|i| format!("file{}", i))
+    .map(|name| fs::read_to_string(name).unwrap())
+    .map(|content| content.lines().count())
+    .sum();
+```
+
+---
+
+### 📊 Side-by-Side Comparison
+
+| **Aspect**         | **Imperative**                                         | **Functional**                      |
+| :----------------- | :----------------------------------------------------- | :---------------------------------- |
+| **C++23**          | Manual loop with file stream and line counter          | Ranges with `transform` pipeline    |
+| **Rust**           | `for` loop with `read_to_string` and `lines().count()` | Iterator chain with `map` and `sum` |
+| **Key Difference** | Explicit state management                              | Declarative transformation pipeline |
+
+This arrangement makes it easy to compare the paradigms and languages side by side! 🎯

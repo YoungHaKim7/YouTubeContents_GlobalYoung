@@ -4,7 +4,7 @@
 
 | **Aspect** | **C++23 Imperative** | **Rust Imperative** | **Rust Functional** | **C++23 Functional** | **Key Differences** |
 |:---|:---|:---|:---|:---|:---|
-| **Code Example** | ```cpp<br>int sum = 0;<br>for (int i = 1; i <= 10; ++i) {<br>    sum += i;<br>}<br>std::println("{}", sum);<br>``` | ```rust<br>let mut sum = 0;<br>for i in 1..=10 {<br>    sum += i;<br>}<br>println!("{}", sum);<br>``` | ```rust<br>let sum = (1..=10)<br>    .fold(0, \|acc, x\| acc + x);<br>println!("{}", sum);<br>``` | ```cpp<br>auto numbers = std::views::iota(1, 11);<br>int sum = std::ranges::fold_left(<br>    numbers, 0, std::plus{}<br>);<br>std::println("{}", sum);<br>``` | Rust's `fold` is more concise than C++23's `fold_left` |
+| **Code Example** | `int sum = 0;`<br>`for (int i = 1; i <= 10; ++i) {`<br>&emsp;`sum += i;`<br>`}`<br>`std::println("{}", sum);`<br> | `let mut sum = 0;`<br>`for i in 1..=10 {`<br>&emsp;`sum += i;`<br>`}`<br>`println!("{}", sum);` | `let sum = (1..=10)`<br>&emsp;`.fold(0, \|acc, x\| acc + x);`<br>`println!("{}", sum);` | `auto numbers = std::views::iota(1, 11);`<br>`int sum = std::ranges::fold_left(`<br>&emsp;`numbers, 0, std::plus{}`<br>`);`<br>`std::println("{}", sum);` | Rust's `fold` is more concise than C++23's `fold_left` |
 | **Control Flow** | Explicit `for` loop with manual iteration control | Explicit `for` loop with manual iteration control | Iterator-based with functional composition | Algorithm-based (`std::ranges::fold_left`) | FP abstracts iteration control in both languages |
 | **State Management** | Manual state accumulation in mutable variable `sum` | Manual state accumulation in mutable variable `sum` | Declarative transformation, immutable by default | Declarative transformation with functional style | Rust encourages immutability by default |
 | **Range Creation** | N/A (manual loop) | N/A (manual loop) | `1..=10` (inclusive range) | `std::views::iota(1, 11)` | Rust's range syntax is more concise |
@@ -36,8 +36,8 @@
 
 | **Paradigm** | **C++23 Code** | **Rust Code** |
 |:---|:---|:---|
-| **Imperative** | ```cpp<br>std::vector\<std::string\> files = {"a.txt", "b.txt"};<br>int total_lines = 0;<br>for (const auto& file : files) {<br>    std::ifstream f(file);<br>    std::string line;<br>    while (std::getline(f, line))<br>        total_lines++;<br>}<br>``` | ```rust<br>let files = vec!["a.txt", "b.txt"];<br>let mut total_lines = 0;<br>for file in files {<br>    let content = fs::read_to_string(file)?;<br>    total_lines += content.lines().count();<br>}<br>``` |
-| **Functional** | ```cpp<br>auto files = std::views::iota(1, 3)<br>  \| std::views::transform([](int i) {<br>      return "file" + std::to_string(i);<br>  });<br>``` | ```rust<br>let total: usize = (1..3)<br>    .map(\|i\| format!("file{}", i))<br>    .map(\|name\| fs::read_to_string(name).unwrap())<br>    .map(\|content\| content.lines().count())<br>    .sum();<br>``` |
+| **Imperative** | `std::vector<std::string> files = {"a.txt", "b.txt"};`<br>`int total_lines = 0;`<br>`for (const auto& file : files) {`<br>&emsp;`std::ifstream f(file);`<br>`    std::string line;`<br>&emsp;`while (std::getline(f, line))`<br>&emsp;`total_lines++;`<br>`}` | `let files = vec!["a.txt", "b.txt"];`<br>`let mut total_lines = 0;`<br>`for file in files {`<br>&emsp;`let content = fs::read_to_string(file)?;`<br>&emsp;`total_lines += content.lines().count();`<br>`}`|
+| **Functional** | `auto files = std::views::iota(1, 3)`<br>&emsp;`\| std::views::transform([](int i) {`<br>&emsp;`return "file" + std::to_string(i);`<br />`});` | `let total: usize = (1..3)`<br>&emsp;`.map(\|i\| format!("file{}", i))`<br>&emsp;`.map(\|name\| fs::read_to_string(name).unwrap())`<br>&emsp;`.map(\|content\| content.lines().count())`<br>&emsp;`.sum();` |
 
 ---
 
