@@ -12,7 +12,7 @@ $ CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph --release --bin a01_rust_mul
 
 [ perf record: Woken up 11 times to write data ]
 [ perf record: Captured and wrote 5.725 MB perf.data (96 samples) ]
-Running perf script [11s]:                                                                                                                                         writing flamegraph to "flamegraph.svg"
+Running perf script [11s]:   writing flamegraph to "flamegraph.svg"
 ```
 
 - hyperfine 분석
