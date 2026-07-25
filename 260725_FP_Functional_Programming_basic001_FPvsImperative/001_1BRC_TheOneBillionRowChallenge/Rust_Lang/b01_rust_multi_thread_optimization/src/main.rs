@@ -1,11 +1,11 @@
-use rayon::prelude::*;
-
 use std::{
     collections::HashMap,
     fs::File,
     io::{BufRead, BufReader},
     path::PathBuf,
 };
+
+use rayon::iter::{IntoParallelIterator, ParallelIterator};
 
 #[derive(Debug, Clone)]
 struct StationStats {
