@@ -1,5 +1,10 @@
 # Result
 
+```bash
+$ perf --version
+perf version 7.1.4
+```
+
 - flamegraph분석
 
 ```bash
