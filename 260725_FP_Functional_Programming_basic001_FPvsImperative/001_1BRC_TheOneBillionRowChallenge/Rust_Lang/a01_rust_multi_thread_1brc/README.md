@@ -252,3 +252,12 @@ cargo flamegraph --release --bin rust_multi_thread_1brc
 5. **Your program is fast** - 32ms is excellent for this demo dataset!
 
 Would you like me to show you how to optimize for true billion-row performance, or analyze any specific aspect in more detail?
+
+### 주요 시사점
+- ①. 타이밍이 맞습니다 - 멀티스레딩이 작동 중입니다 (usr+sys > 경과)
+- ②. 하지만 효율성은 낮습니다 - 20코어 머신에서 1.5배의 속도 향상에 불과합니다
+- ③. 병목 현상은 I/O입니다 - 파일 읽기가 계산이 아닌 지배적입니다
+- ④. 진정한 1BRC를 위해 - .collect()가 아닌 스트리밍/정크 읽기가 필요합니다
+- ⑤. 당신의 프로그램은 빠릅니다 - 32ms는 이 데모 데이터셋에 매우 적합합니다!
+
+진정한 10억 행 성능을 최적화하는 방법을 보여드릴까요, 아니면 특정 측면을 더 자세히 분석하는 방법을 알려드릴까요?
