@@ -1,0 +1,6 @@
+[package]
+name = "z97_for_pattern"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

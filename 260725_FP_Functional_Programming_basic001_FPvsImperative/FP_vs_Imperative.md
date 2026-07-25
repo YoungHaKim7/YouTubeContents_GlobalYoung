@@ -58,6 +58,52 @@ let result: Vec<i32> = input
 
 
 
+![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) 
+
+<!-- _color: white -->
+
+- FP sytle
+  - `while let` 패턴으로 for 안 쓰고도 가능
+
+```rs
+fn main() {
+    let my_vec = vec![1, 2, 3, 4, 5];
+
+    let mut my_vec_iter = my_vec.iter();
+
+    while let Some(val) = my_vec_iter.next() {
+        println!("front poped : {}", val);
+    }
+    println!("front pop pattern ~");
+}
+
+```
+
+---
+
+
+![width:60px](https://private-user-images.githubusercontent.com/67513038/405572633-3489669b-63c0-439e-b507-9b2bfb3fdd5e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ4MTUwMjcsIm5iZiI6MTc4NDgxNDcyNywicGF0aCI6Ii82NzUxMzAzOC80MDU1NzI2MzMtMzQ4OTY2OWItNjNjMC00MzllLWI1MDctOWIyYmZiM2ZkZDVlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIzVDEzNTIwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZmNlMmE4ZGI1M2E4MzU3ZGIzZGZlZTMyNDIzYjhkOTAzMzJjOGU4MDBhN2I4MWYyNzA2OGRkOWE5MWI0MDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.gdTmZ4TECWmlClgQFCk4uTbHsYj-CYoUQT0Qu6wh_NU) 
+
+<!-- _color: white -->
+
+- 여러분들이 생각하는 흔한 for 패턴
+
+```rs
+fn main() {
+    let my_vec = vec![1, 2, 3, 4, 5];
+
+    for i in my_vec {
+        println!("{i}");
+    }
+
+    println!("for pattern ~");
+}
+```
+
+---
+
+
+
 ## Watch and preview
 
 Marp CLI is supported watch mode and preview window.

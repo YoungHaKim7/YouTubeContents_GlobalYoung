@@ -1,0 +1,6 @@
+[package]
+name = "z99_for_disable"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
