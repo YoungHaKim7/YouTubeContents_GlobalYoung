@@ -21,7 +21,7 @@
 
 | **Paradigm** | **C++23 Code** | **Rust Code** |
 |:------------|:---------------|:---------------|
-| **Imperative** | ```cpp<br>int sum = 0;<br>for (int i = 1; i <= 10; ++i) {<br>    sum += i;<br>}<br>std::println("{}", sum);<br>``` | ```rust<br>let mut sum = 0;<br>for i in 1..=10 {<br>    sum += i;<br>}<br>println!("{}", sum);<br>``` |
+| **Imperative** | `int sum = 0;`<br>`for (int i = 1; i <= 10; ++i) {`<br> &emsp;   `sum += i;`<br>`}`<br>`std::println("{}", sum);`<br> | `let mut sum = 0;`<br>`for i in 1..=10 {`<br>    &emsp;`sum += i;`<br>`}`<br>`println!("{}", sum);` |
 | **Functional** | ```cpp<br>#include \<ranges\><br>#include \<algorithm\><br>auto numbers = std::views::iota(1, 11);<br>int sum = std::ranges::fold_left(<br>    numbers, 0, std::plus{}<br>);<br>std::println("{}", sum);<br>``` | ```rust<br>let sum = (1..=10)<br>    .fold(0, \|acc, x\| acc + x);<br>println!("{}", sum);<br>``` |
 
 ### Example 2: Transform and filter
