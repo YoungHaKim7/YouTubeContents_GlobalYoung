@@ -29,7 +29,7 @@
 | **Paradigm** | **C++23 Code** | **Rust Code** |
 |:------------|:---------------|:---------------|
 | **Imperative** | `std::vector<int> evens;`<br>`for (int i : input) {`<br>&emsp;`if (i % 2 == 0)`<br>&emsp;&emsp;`evens.push_back(i * 2);`<br>`}`<br> | `let mut evens = Vec::new();`<br>`for i in input {`<br>&emsp;`if i % 2 == 0 {`<br>&emsp;&emsp;`evens.push(i * 2);`<br>&emsp;`}`<br>`}` |
-| **Functional** |`auto result = input`<br>&emsp;`\| std::views::filter([](int x) {`<br>&emsp;`return x % 2 == 0;`<br>`})`<br>&emsp;`\| std::views::transform([](int x) {`<br>&emsp;`return x * 2;`<br>`  });` | `let result: Vec<i32> = input`<br>&emsp;`.iter()`<br>&emsp;`.filter(\|&&x\| x % 2 == 0)`<br>&emsp;`.map(\|&x\| x * 2)`<br>&emsp;`.collect();` |
+| **Functional** |`auto result = input`<br>&emsp;`\| std::views::filter([](int x) {`<br>&emsp;&emsp;`return x % 2 == 0;`<br>&emsp;`})`<br>&emsp;`\| std::views::transform([](int x) {`<br>&emsp;&emsp;`return x * 2;`<br>&emsp;`});` | `let result: Vec<i32> = input`<br>&emsp;`.iter()`<br>&emsp;`.filter(\|&&x\| x % 2 == 0)`<br>&emsp;`.map(\|&x\| x * 2)`<br>&emsp;`.collect();` |
 
 ---
 
