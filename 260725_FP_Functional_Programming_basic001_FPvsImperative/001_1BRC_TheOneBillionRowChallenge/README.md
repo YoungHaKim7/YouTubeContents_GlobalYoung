@@ -6,6 +6,14 @@
 
 The `time` output shows three different timing metrics for your `just cro` command:
 
+```bash
+________________________________________________________
+Executed in    1.99 secs    fish           external
+   usr time    3.35 secs    0.15 millis    3.35 secs
+   sys time    0.55 secs    1.02 millis    0.55 secs
+```
+
+
 ## Breakdown
 
 **Wall-clock time (what you experienced)**
