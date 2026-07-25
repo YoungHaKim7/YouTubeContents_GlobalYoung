@@ -1,4 +1,4 @@
-// FP sytle
+// Imperative sytle
 #include <fstream>
 #include <print>
 #include <string>
