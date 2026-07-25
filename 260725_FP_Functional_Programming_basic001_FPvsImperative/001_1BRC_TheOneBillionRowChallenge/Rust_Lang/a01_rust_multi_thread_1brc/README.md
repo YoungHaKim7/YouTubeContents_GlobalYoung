@@ -1,5 +1,41 @@
 # Result
 
+- flamegraph분석
+
+```bash
+$ CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph --release --bin a01_rust_multi_thread_1brc
+
+[ perf record: Woken up 11 times to write data ]
+[ perf record: Captured and wrote 5.725 MB perf.data (96 samples) ]
+Running perf script [11s]:                                                                                                                                         writing flamegraph to "flamegraph.svg"
+```
+
+- hyperfine 분석
+
+```bash
+$ hyperfine \
+          'cargo r --release' \
+          'RAYON_NUM_THREADS=1 cargo r --release' \
+          'RAYON_NUM_THREADS=4 cargo r --release' \
+          --warmup 3
+Benchmark 1: cargo r --release
+  Time (mean ± σ):      42.6 ms ±   2.5 ms    [User: 42.5 ms, System: 15.7 ms]
+  Range (min … max):    39.1 ms …  51.7 ms    68 runs
+
+Benchmark 2: RAYON_NUM_THREADS=1 cargo r --release
+  Time (mean ± σ):      47.1 ms ±   2.3 ms    [User: 37.9 ms, System: 9.6 ms]
+  Range (min … max):    43.2 ms …  55.2 ms    62 runs
+
+Benchmark 3: RAYON_NUM_THREADS=4 cargo r --release
+  Time (mean ± σ):      43.3 ms ±   2.3 ms    [User: 39.8 ms, System: 10.8 ms]
+  Range (min … max):    40.1 ms …  48.4 ms    61 runs
+
+Summary
+  cargo r --release ran
+    1.02 ± 0.08 times faster than RAYON_NUM_THREADS=4 cargo r --release
+    1.11 ± 0.08 times faster than RAYON_NUM_THREADS=1 cargo r --release
+```
+
 
 ```bash
 $ time cargo run --release
