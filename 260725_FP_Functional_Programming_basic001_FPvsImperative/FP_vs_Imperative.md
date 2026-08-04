@@ -394,6 +394,42 @@ https://www.amazon.com/Functional-Programming-programs-functional-techniques/dp/
 
 ---
 
+<!-- _color: white -->
+
+# 함수형 프로그래밍(Functional Programming)이란?
+
+## Concept
+
+> Avoids changing State and Mutable data
+
+- 상태와 Data를 변경하는 것을 피하면서 프로그래밍하는 것입니다.
+- 즉 대입문[assignment statements] 없이 프로그래밍하는 것입니다.
+
+---
+
+<!-- _color: white -->
+
+## 일급 시민(First-class citizens)
+- 함수를 일급 시민으로 관리하겠다
+
+### 일급 시민이 된다는 것은 무엇을 의미할까요?
+- Argument로 전달할 수 있다는 의미. → 함수가 Argument로 전달될 수 있다.
+- 함수의 Return값이 될 수 있다는 의미. → Return값이 함수가 될 수 있다.
+- 값을 수정하기도, 값을 할당할 수도 있다는 의미. → 함수를 값처럼 할당하기도 수정도 할 수 있다.
+
+---
+
+<!-- _color: white -->
+
+### 일급 시민은 누가 있을까요?
+- value
+- type
+- object
+- entity
+
+- https://nesoy.github.io/blog/Functional-Programming
+
+---
 
 <!-- _color: white -->
 
