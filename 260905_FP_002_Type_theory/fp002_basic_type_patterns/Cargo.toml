@@ -1,0 +1,6 @@
+[package]
+name = "fp002_basic_type_patterns"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
