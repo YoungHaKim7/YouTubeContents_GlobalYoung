@@ -67,7 +67,7 @@ background-color: #050d1a
 
 <!-- _color: white -->
 
-# Rust에는 독특하게 size가 0bytes인게 존재합니다.
+# Rust에는 독특하게 size가 0 bytes인게 존재합니다.
 
 ## 많이 생소 하시죠?
 
