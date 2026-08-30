@@ -1,4 +1,5 @@
 use std::marker::PhantomData;
+
 struct Zero;
 struct Succ<N>(PhantomData<N>);
 
