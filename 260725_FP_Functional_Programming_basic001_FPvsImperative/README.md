@@ -27,6 +27,8 @@ npx @marp-team/marp-cli@latest -w FP_vs_Imperative.md
 npx @marp-team/marp-cli@latest FP_vs_Imperative.md
 ```
 
+# 260804) 러스트 개발자를 위한 FP 개념 잡기 완전기초(Functional Programming) rust_edition2024 #rust
+- https://youtu.be/VnaV11YtI50
 
 # Comprehensive Analysis: Imperative vs Functional Programming[|🔝|](#link)
 
