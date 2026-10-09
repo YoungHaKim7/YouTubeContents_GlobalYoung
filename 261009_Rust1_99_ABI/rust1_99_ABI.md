@@ -316,7 +316,7 @@ func main() {
 
 <!-- _color: white -->
 
-<img width="30" alt="Go" src="https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/8b4f734b-d251-467a-8dc5-58104d2aa38b" /> go (go version 1.27.2)
+<img width="30" alt="Go" src="https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/8b4f734b-d251-467a-8dc5-58104d2aa38b" /> go build (go version 1.27.2)
 
 ```fish
 abi_rust/examples/go on  main [!] via 🐹 v1.27.2
